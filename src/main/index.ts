@@ -1,4 +1,4 @@
-import { app, BrowserWindow } from "electron";
+import { app, BrowserWindow, screen } from "electron";
 import * as path from "path";
 import { format as formatUrl } from "url";
 import installExtension, {
@@ -13,7 +13,10 @@ const isDevelopment = process.env.NODE_ENV !== "production";
 let mainWindow: BrowserWindow | null;
 
 function createMainWindow() {
+  const { width, height } = screen.getPrimaryDisplay().workAreaSize;
   const window = new BrowserWindow({
+    width,
+    height,
     webPreferences: { nodeIntegration: true },
   });
 
