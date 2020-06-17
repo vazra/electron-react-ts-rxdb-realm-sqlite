@@ -20,6 +20,11 @@ import { RxDBAdapterCheckPlugin } from "rxdb/plugins/adapter-check";
 import { RxDBEncryptionPlugin } from "rxdb/plugins/encryption";
 import { RxDBQueryBuilderPlugin } from "rxdb/plugins/query-builder";
 import { RxDBValidatePlugin } from "rxdb/plugins/validate";
+import path from "path";
+import fs from "fs";
+
+const remote = require("electron").remote;
+const app = remote.app;
 
 let dbPromise: Promise<RxDatabase<MyDatabaseCollections>>;
 const supportedAdapters: IAdapter[] = [];
@@ -162,8 +167,12 @@ const collections = [
 
 const createDB = async (adapter: IAdapter) => {
   console.log("DatabaseService: creating database..");
+  let dbname = "testdb";
+  const dirPath = path.join(app.getPath("home"), "shdesk", "leveldb");
+  if (!fs.existsSync(dirPath)) fs.mkdirSync(dirPath);
+  if (adapter === "leveldb") dbname = path.join(dirPath, "data.ldb");
   const db: MyDatabase = await createRxDatabase<MyDatabaseCollections>({
-    name: "testdb", // <- name
+    name: dbname, // <- name
     adapter: adapter, // <- storage-adapter
     password: "passpasspass", // <- password (optional)
     multiInstance: false, // This should be set to false when you have single-instances like a single-window electron-app

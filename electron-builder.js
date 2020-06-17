@@ -4,7 +4,7 @@ module.exports = {
   //   copyright: "Copyright © 2020 Vazra.",
 
   // Package electron code into a asar archive. Set to false to debug issues.
-  //   asar: true,
+  asar: false,
   // npmRebuild: false,
 
   // Files & Directories
