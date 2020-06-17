@@ -1,39 +1,36 @@
-import React, { useEffect, useState, useRef } from "react";
-import { getDB, changeAdapter } from "../db/db";
-import { RxDatabase } from "rxdb";
-import { addUserstoDB } from "../utils/helper";
+import React, { useState, useEffect } from "react";
 import {
+  Button,
   Container,
   Jumbotron,
-  Button,
   Row,
   Col,
   Form,
   ProgressBar,
-  Card,
-  ButtonGroup,
   Spinner,
+  ButtonGroup,
+  Card,
 } from "react-bootstrap";
-import { TableChangeType, TableChangeState } from "react-bootstrap-table-next";
+import { UserDocType } from "../types";
 import RemoteTable from "./RemoteTable";
-import { UserDocType, MyDatabaseCollections, IAdapter } from "../types";
+import { addUserstoRealm, getDocs, getCount } from "../realmdb/helpers";
+import { TableChangeType, TableChangeState } from "react-bootstrap-table-next";
+import { Person } from "../realmdb/Person";
+// import { testRealm } from "../realmdb/sample";
 
-// interface IDashboard {
+// interface IRealMDashboard {
 //   children: React.ReactNode;
 // }
 
-export function Dashboard() {
-  const [users, setUsers] = useState<UserDocType[]>();
-  const [db, setDB] = useState<RxDatabase<MyDatabaseCollections>>();
+export function RealMDashboard() {
+  const [users, setUsers] = useState<Person[]>();
+  // const [db, setDB] = useState<RxDatabase<MyDatabaseCollections>>();
   const [totalCount, setTotalCount] = useState<number>(0);
   const [addCount, setAddCount] = useState<number>(100);
   const [progress, setProgress] = useState<number>(0);
   const [sizePerPage, setSizePerPage] = useState<number>(10);
   const [page, setPage] = useState<number>(1);
-  const [adapter, setAdapter] = useState<IAdapter>("memory");
   const [isLoading, setLoading] = useState<[boolean, string]>([false, ""]);
-  const target = useRef<HTMLDivElement>(null);
-
   const [latestReadTime, setLatestReadTime] = useState<[number, number]>([
     334.54,
     20,
@@ -42,118 +39,59 @@ export function Dashboard() {
     334.54,
     20,
   ]);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [availabeAdapters] = useState<IAdapter[]>([
-    "idb",
-    "memory",
-    "leveldb",
-    "websql",
-  ]);
 
   useEffect(() => {
     // create the databse
     async function anyNameFunction() {
       setLoading([true, "initializing database"]);
-      const theDB = await getDB(adapter);
+      //   testRe alm();
+      console.log("start === ", "addUserstoRealm");
+      await addUserstoRealm(100, setProgress, setLatestWriteTime);
 
-      setDB(theDB);
-      await addUserstoDB(theDB, 100, setProgress, setLatestWriteTime);
+      // console.log("start === ", "getCount");
+      // setTotalCount(getCount());
 
-      const users = await theDB?.users?.getDocs(10, 1, setLatestReadTime);
-      setUsers(users);
+      // console.log("start === ", "getDocs");
+      // const users = getDocs(10, 1, setLatestReadTime);
+      // setUsers(users);
       setLoading([false, ""]);
     }
     anyNameFunction();
-  }, [adapter]);
-
-  const getDocs = async () => {
-    const users =
-      (await db?.users?.getDocs(sizePerPage, page, setLatestReadTime)) || [];
-    setUsers(users);
-  };
+  }, []);
 
   const reloadUI = async () => {
+    setUsers([]);
     setProgress(0);
+    setTotalCount(0);
     setPage(1);
     setSizePerPage(10);
-    setUsers([]);
-    setTotalCount(0);
-
-    const theDB = await getDB(adapter);
-    setDB(theDB);
-
-    await getDocs();
   };
 
-  useEffect(() => {
-    async function anyNameFunction() {
-      console.log("here", sizePerPage, page);
-      setLoading([true, "initializing database"]);
-      const users = await db?.users?.getDocs(
-        sizePerPage,
-        page,
-        setLatestReadTime
-      );
-      setUsers(users);
-      setLoading([false, ""]);
-    }
-    anyNameFunction();
-
-    // db?.users
-    //   .getDocs(sizePerPage, page, setLatestReadTime)
-    //   .then((docs) => {
-    //     console.log("kkk got new users", docs);
-    //     setUsers(docs);
-    //   })
-    //   .catch((err) => {
-    //     console.error("Failed to get users", err);
-    //   });
-  }, [db, page, sizePerPage]);
+  function getDocsAndCount(perPageCount: number, pageNo: number) {
+    const count = getCount();
+    setTotalCount(count);
+    const newUsers = getDocs(perPageCount, pageNo, setLatestReadTime);
+    setUsers(newUsers);
+  }
 
   useEffect(() => {
-    // Create an scoped async function in the hook
-    async function anyNameFunction() {
-      const theDB = await getDB(adapter);
-      // await theDB?.users?.getCount().then((count) => {
-      //   setTotalCount(count);
-      // });
-
-      // await theDB?.users?.getCountPouch().then((count) => {
-      //   setTotalCount(count);
-      // });
-
-      await theDB?.users?.getCountWithInfo().then((count) => {
-        setTotalCount(count);
-      });
-    }
-    // Execute the created function directly
-    anyNameFunction();
-  }, [adapter, users]);
+    console.log("pagechanged === ", "getDocsAndCount", page, sizePerPage);
+    getDocsAndCount(sizePerPage, page);
+  }, [page, sizePerPage]);
 
   const handleChangeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
     setAddCount(+e.target.value);
     setProgress(0);
   };
-  const adapterLabel = {
-    idb: "IndexedDB",
-    memory: "In Memmory",
-    websql: "Web SQL",
-    leveldb: "Level DB",
-    localstorage: "Local Storage",
-  };
 
   const handleAddSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setProgress(0);
-    db && (await addUserstoDB(db, addCount, setProgress, setLatestWriteTime));
+    await addUserstoRealm(addCount, setProgress, setLatestWriteTime);
     setAddCount(100);
-    getDocs();
+    getDocsAndCount(sizePerPage, page);
   };
-
-  const progressInstance = (
-    <ProgressBar now={progress} label={`${progress}%`} />
-  );
 
   const handleTableChange = (
     type: TableChangeType,
@@ -164,8 +102,9 @@ export function Dashboard() {
     setSizePerPage(sizePerPage);
   };
 
-  // fetchCount();
-
+  const progressInstance = (
+    <ProgressBar now={progress} label={`${progress}%`} />
+  );
   return (
     <>
       <Row>
@@ -201,21 +140,7 @@ export function Dashboard() {
               </Spinner>
             </Row>
           ) : (
-            <ButtonGroup aria-label="Adapters">
-              {availabeAdapters.map((anAdapter) => (
-                <Button
-                  key={anAdapter}
-                  onClick={async () => {
-                    setLoading([true, `updating adapter ${anAdapter}`]);
-                    await changeAdapter(anAdapter);
-                    setAdapter(anAdapter);
-                  }}
-                  variant={anAdapter === adapter ? "info" : "outline-info"}
-                >
-                  {adapterLabel[anAdapter]}
-                </Button>
-              ))}
-            </ButtonGroup>
+            <ButtonGroup aria-label="Adapters"></ButtonGroup>
           )}
         </Col>
 
@@ -287,4 +212,4 @@ export function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default RealMDashboard;

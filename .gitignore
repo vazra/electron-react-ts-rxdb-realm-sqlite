@@ -5,6 +5,7 @@ thumbs.db
 .idea/
 .env
 
-# RxDb files
+# DB files
 *-rxdb-*/**/*
 rxdb-adapter-check
+.db/**/*

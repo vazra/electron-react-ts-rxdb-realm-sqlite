@@ -13,6 +13,7 @@
   "dependencies": {
     "@hot-loader/react-dom": "16.13.0",
     "bootstrap": "4.5.0",
+    "electron-devtools-installer": "^3.0.0",
     "faker": "4.1.0",
     "pouchdb-adapter-idb": "7.2.1",
     "pouchdb-adapter-leveldb": "^7.2.1",
@@ -24,10 +25,10 @@
     "react-bootstrap-table2-paginator": "2.1.2",
     "react-dom": "16.13.0",
     "react-hot-loader": "^4.12.21",
+    "realm": "^6.0.2",
     "rxdb": "9.1.0",
     "rxjs": "6.5.5",
-    "source-map-support": "^0.5.16",
-    "electron-devtools-installer": "^3.0.0"
+    "source-map-support": "^0.5.16"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.10.1",
