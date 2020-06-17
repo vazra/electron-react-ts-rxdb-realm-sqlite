@@ -19,7 +19,7 @@ export const getCount = () => {
   return count;
 };
 
-export const getDocs = async (
+export const getDocs = (
   count: number,
   page: number = 1,
   saveTimeTaken?: React.Dispatch<React.SetStateAction<[number, number]>>
@@ -27,16 +27,9 @@ export const getDocs = async (
   console.log("getDocs");
   const t0 = timeStart();
   const allDocs = getDB().objects<Person>(Person).filtered("phone != name");
-
-  // get first 5 Car objects
-  let docs = allDocs; // .slice((page - 1) * count, count);
-
-  // const docs : Person[] = []
-
-  // for (let aDoc of lazyDocs){
-  //   docs.push(aDoc)
-  // }
-
+  const skip = (page - 1) * count;
+  let lazyDocs = allDocs.slice(skip, skip + count);
+  const docs = Array.from(lazyDocs);
   console.log(
     `retrived ${docs.length} docs from users (skipped : ${page * count})`
   );
@@ -72,12 +65,16 @@ export const addUserstoRealm = async (
       userArry.push(createAUser());
     }
     const ta0 = performance.now();
-    db.write(() => {
-      for (let aUserObj of userArry) {
-        db.create(Person, { ...aUserObj, id: docID.toString() });
-        docID++;
-      }
-    });
+
+    Person.bulkAddPersons(userArry, docID);
+    docID = docID + userArry.length;
+
+    // db.write(() => {
+    //   for (let aUserObj of userArry) {
+    //     db.create(Person, { ...aUserObj, id: docID.toString() });
+    //     docID++;
+    //   }
+    // });
 
     const ta1 = performance.now();
     timeTaken.push(ta1 - ta0);

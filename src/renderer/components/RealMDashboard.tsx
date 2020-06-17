@@ -15,14 +15,15 @@ import { UserDocType } from "../types";
 import RemoteTable from "./RemoteTable";
 import { addUserstoRealm, getDocs, getCount } from "../realmdb/helpers";
 import { TableChangeType, TableChangeState } from "react-bootstrap-table-next";
-import { testRealm } from "../realmdb/sample";
+import { Person } from "../realmdb/Person";
+// import { testRealm } from "../realmdb/sample";
 
 // interface IRealMDashboard {
 //   children: React.ReactNode;
 // }
 
 export function RealMDashboard() {
-  const [users, setUsers] = useState<UserDocType[]>();
+  const [users, setUsers] = useState<Person[]>();
   // const [db, setDB] = useState<RxDatabase<MyDatabaseCollections>>();
   const [totalCount, setTotalCount] = useState<number>(0);
   const [addCount, setAddCount] = useState<number>(100);
@@ -45,48 +46,36 @@ export function RealMDashboard() {
       setLoading([true, "initializing database"]);
       //   testRe alm();
       console.log("start === ", "addUserstoRealm");
-      //   await addUserstoRealm(100, setProgress, setLatestWriteTime);
+      await addUserstoRealm(100, setProgress, setLatestWriteTime);
 
-      //   console.log("start === ", "getCount");
-      //   setTotalCount(getCount());
+      // console.log("start === ", "getCount");
+      // setTotalCount(getCount());
 
-      //   console.log("start === ", "addUserstoRealm");
-      //   const users = await getDocs(10, 1, setLatestReadTime);
-      //   setUsers(users);
+      // console.log("start === ", "getDocs");
+      // const users = getDocs(10, 1, setLatestReadTime);
+      // setUsers(users);
       setLoading([false, ""]);
     }
     anyNameFunction();
   }, []);
 
   const reloadUI = async () => {
+    setUsers([]);
     setProgress(0);
+    setTotalCount(0);
     setPage(1);
     setSizePerPage(10);
-    setUsers([]);
-    setTotalCount(0);
-
-    const count = await getCount();
-    setTotalCount(count);
-
-    const users = await getDocs(10, 1, setLatestReadTime);
-    setUsers(users);
   };
 
   function getDocsAndCount(perPageCount: number, pageNo: number) {
     const count = getCount();
     setTotalCount(count);
-
-    getDocs(perPageCount, pageNo, setLatestReadTime)
-      .then((users) => {
-        setUsers(users);
-      })
-      .catch((err) => {
-        console.warn(err);
-      });
+    const newUsers = getDocs(perPageCount, pageNo, setLatestReadTime);
+    setUsers(newUsers);
   }
 
   useEffect(() => {
-    console.log("pagechanged === ", "addUserstoRealm");
+    console.log("pagechanged === ", "getDocsAndCount", page, sizePerPage);
     getDocsAndCount(sizePerPage, page);
   }, [page, sizePerPage]);
 
@@ -116,16 +105,8 @@ export function RealMDashboard() {
   const progressInstance = (
     <ProgressBar now={progress} label={`${progress}%`} />
   );
-
-  console.log("ppp", users);
-
   return (
-    <Container className="p-3">
-      <div>
-        <Jumbotron style={{ textAlign: "center" }}>
-          <h1 className="header">Real - Electron - React</h1>
-        </Jumbotron>
-      </div>
+    <>
       <Row>
         <Col>
           <Form onSubmit={handleAddSubmit}>
@@ -227,7 +208,7 @@ export function RealMDashboard() {
           </Card>
         </Col>
       </Row>
-    </Container>
+    </>
   );
 }
 

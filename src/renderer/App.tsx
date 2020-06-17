@@ -1,11 +1,9 @@
 import React from "react";
-import Dashboard from "./components/Dashboard";
 import { hot } from "react-hot-loader/root";
-import RealMDashboard from "./components/RealMDashboard";
+import Home from "./components/Home";
 
 function App() {
-  // return <Dashboard />;
-  return <RealMDashboard />;
+  return <Home />;
 }
 
 export default hot(App);

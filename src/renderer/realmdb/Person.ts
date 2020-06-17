@@ -32,12 +32,16 @@ export class Person {
     db.write(() => db.create(COLL_PERSON, newObj));
   }
 
-  static bulkAddPersons(docs: UserDocType[]) {
+  static bulkAddPersons(docs: UserDocType[], firstid?: number) {
     const db = getDB();
+
+    let docId =
+      firstid === undefined ? Math.floor(Math.random() * 10000000) : firstid;
     db.write(() => {
       for (let aDoc of docs) {
-        const newObj = { ...aDoc, id: Math.random() };
+        const newObj = { ...aDoc, id: docId.toString() };
         db.create(COLL_PERSON, newObj);
+        docId = docId + 1;
       }
     });
   }

@@ -167,12 +167,7 @@ export function Dashboard() {
   // fetchCount();
 
   return (
-    <Container className="p-3">
-      <div ref={target}>
-        <Jumbotron style={{ textAlign: "center" }}>
-          <h1 className="header">RxDB ({adapterLabel[adapter]}) with React</h1>
-        </Jumbotron>
-      </div>
+    <>
       <Row>
         <Col>
           <Form onSubmit={handleAddSubmit}>
@@ -288,7 +283,7 @@ export function Dashboard() {
           </Card>
         </Col>
       </Row>
-    </Container>
+    </>
   );
 }
 
