@@ -1,10 +1,8 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import { getDB, changeAdapter } from "../db/db";
 import { RxDatabase } from "rxdb";
 import { addUserstoDB } from "../utils/helper";
 import {
-  Container,
-  Jumbotron,
   Button,
   Row,
   Col,
@@ -32,7 +30,6 @@ export function Dashboard() {
   const [page, setPage] = useState<number>(1);
   const [adapter, setAdapter] = useState<IAdapter>("memory");
   const [isLoading, setLoading] = useState<[boolean, string]>([false, ""]);
-  const target = useRef<HTMLDivElement>(null);
 
   const [latestReadTime, setLatestReadTime] = useState<[number, number]>([
     334.54,

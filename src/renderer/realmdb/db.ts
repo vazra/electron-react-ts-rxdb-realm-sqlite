@@ -11,7 +11,7 @@ console.log("kkk expected realm path: ", newPath);
 const dbConfig: Realm.Configuration = {
   schema: [Person],
   deleteRealmIfMigrationNeeded: true,
-  path: "./.db/shdb/data.realm",
+  // path: "./.db/shdb/data.realm",
 };
 
 let realmInstance: Realm | null;

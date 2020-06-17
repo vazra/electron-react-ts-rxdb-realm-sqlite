@@ -1,5 +1,5 @@
 // import { Person as KPerson } from "./schema";
-import getDB, { getDbPromise } from "./db";
+import getDB from "./db";
 import { UserDocType } from "../types";
 import { createAUser, timeStart, timeEnd } from "../utils";
 import { Person } from "./Person";
@@ -45,7 +45,6 @@ export const addUserstoRealm = async (
   chunk?: number
 ) => {
   const t0 = performance.now();
-  const db = await getDbPromise();
   const timeTaken = [];
   // if the chunk is the default one set it to an appropriate value (max of 100 or .5% increment is considered)
   if (!chunk) {

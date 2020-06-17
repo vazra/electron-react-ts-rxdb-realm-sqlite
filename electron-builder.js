@@ -5,7 +5,7 @@ module.exports = {
 
   // Package electron code into a asar archive. Set to false to debug issues.
   //   asar: true,
-  //   npmRebuild: false,
+  // npmRebuild: false,
 
   // Files & Directories
 

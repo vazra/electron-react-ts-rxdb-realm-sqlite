@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {
   Button,
-  Container,
-  Jumbotron,
   Row,
   Col,
   Form,
@@ -11,7 +9,6 @@ import {
   ButtonGroup,
   Card,
 } from "react-bootstrap";
-import { UserDocType } from "../types";
 import RemoteTable from "./RemoteTable";
 import { addUserstoRealm, getDocs, getCount } from "../realmdb/helpers";
 import { TableChangeType, TableChangeState } from "react-bootstrap-table-next";
