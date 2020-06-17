@@ -1,11 +1,12 @@
 {
   "name": "electron-webpack-quick-start",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "dev": "electron-webpack dev",
     "compile": "electron-webpack",
     "dist": "yarn compile && electron-builder",
+    "ship": "yarn dist  --win --ia32 --publish=always",
     "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
   },
   "dependencies": {
@@ -24,7 +25,8 @@
     "react-hot-loader": "^4.12.21",
     "rxdb": "9.1.0",
     "rxjs": "6.5.5",
-    "source-map-support": "^0.5.16"
+    "source-map-support": "^0.5.16",
+    "electron-devtools-installer": "^3.0.0"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.10.1",
@@ -37,7 +39,6 @@
     "@types/react-dom": "^16.9.8",
     "electron": "8.3.2",
     "electron-builder": "^22.7.0",
-    "electron-devtools-installer": "^3.0.0",
     "electron-webpack": "^2.8.2",
     "electron-webpack-ts": "^4.0.1",
     "typescript": "^3.9.5",

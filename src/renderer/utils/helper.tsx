@@ -40,7 +40,7 @@ export const addUserstoDB = async (
     }
     const ta0 = performance.now();
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const result = await db?.users.bulkInsert(userArry);
+    /* const result = */ await db?.users.bulkInsert(userArry);
     const ta1 = performance.now();
     timeTaken.push(ta1 - ta0);
     done = done + aChunk;

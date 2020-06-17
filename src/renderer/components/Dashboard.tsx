@@ -43,7 +43,7 @@ export function Dashboard() {
     20,
   ]);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [availabeAdapters, setAvailabeAdapters] = useState<IAdapter[]>([
+  const [availabeAdapters] = useState<IAdapter[]>([
     "idb",
     "memory",
     "leveldb",
