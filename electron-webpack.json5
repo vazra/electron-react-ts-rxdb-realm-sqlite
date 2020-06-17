@@ -1,4 +1,5 @@
 {
+  whiteListedModules: ["react-bootstrap", "rxdb"],
   renderer: {
     webpackConfig: "config/webpack.renderer.config.js",
   },

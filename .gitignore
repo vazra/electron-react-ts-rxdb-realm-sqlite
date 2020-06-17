@@ -3,3 +3,7 @@ dist/
 node_modules/
 thumbs.db
 .idea/
+
+# RxDb files
+*-rxdb-*/**/*
+rxdb-adapter-check
