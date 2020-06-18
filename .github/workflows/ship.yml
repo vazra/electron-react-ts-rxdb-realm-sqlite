@@ -1,0 +1,46 @@
+# This is a basic workflow to help you get started with Actions
+
+name: ship
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ release ]
+  pull_request:
+    branches: [ release ]
+
+jobs:
+  # This workflow contains a single job called "build"
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      
+    - uses: actions/setup-node@v2-beta
+      with:
+        node-version: '12'
+
+    - name: install wine
+      run: |
+        sudo dpkg --add-architecture i386
+        sudo apt-get update
+        sudo apt-get install wine64 wine32
+        wine --version
+    
+    - run: yarn version --patch
+    - run: yarn install
+    - name: yarn ship
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: yarn ship
+        
+
+    - name: Run a one-line script
+      run: echo Hello, Done!
+
+    - name: Run a multi-line script
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
