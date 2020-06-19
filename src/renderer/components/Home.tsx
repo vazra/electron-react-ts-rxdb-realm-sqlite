@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Container, Jumbotron, Button } from "react-bootstrap";
-import RealMDashboard from "./RealMDashboard";
+// import RealMDashboard from "./RealMDashboard";
 import RxJsDashboard from "./Dashboard";
+import SQLiteDashboard from "./SQLiteDashboard";
 
 // interface IHome {
 //   children: React.ReactNode;
@@ -10,8 +11,8 @@ import RxJsDashboard from "./Dashboard";
 export function Home() {
   const [isRxDB, setIsRxDB] = useState<boolean>(true);
 
-  const title = isRxDB ? `RxDB ` : `Realm`;
-  const dashboard = isRxDB ? <RxJsDashboard /> : <RealMDashboard />;
+  const title = isRxDB ? `RxDB ` : `SQLite`;
+  const dashboard = isRxDB ? <RxJsDashboard /> : <SQLiteDashboard />;
   return (
     <Container className="p-3">
       <Jumbotron style={{ textAlign: "center" }}>
