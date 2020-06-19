@@ -1,5 +1,6 @@
 import getDB from "./db";
 import { UserDocType } from "../types";
+import { createAUser } from "../utils";
 export const COLL_PERSON = "Person";
 
 export class Person {
@@ -39,6 +40,21 @@ export class Person {
       firstid === undefined ? Math.floor(Math.random() * 10000000) : firstid;
     db.write(() => {
       for (let aDoc of docs) {
+        const newObj = { ...aDoc, id: docId.toString() };
+        db.create(COLL_PERSON, newObj);
+        docId = docId + 1;
+      }
+    });
+  }
+
+  static AddDummyPersons(count: number, firstid?: number) {
+    const db = getDB();
+
+    let docId =
+      firstid === undefined ? Math.floor(Math.random() * 10000000) : firstid;
+    db.write(() => {
+      for (let i = 0; i < count; i++) {
+        const aDoc = createAUser();
         const newObj = { ...aDoc, id: docId.toString() };
         db.create(COLL_PERSON, newObj);
         docId = docId + 1;

@@ -2,7 +2,7 @@ import Realm from "realm";
 import path from "path";
 const remote = require("electron").remote;
 const app = remote.app;
-console.log("userData", app.getPath("userData"));
+import fs from "fs";
 
 import { Person } from "./Person";
 const defaultPath = Realm.defaultPath;
@@ -12,13 +12,10 @@ const newPath =
 console.log("kkk defaultPath : ", defaultPath);
 console.log("kkk expected realm path: ", newPath);
 console.log("kkk ELECTRON HOME path: ", app.getPath("home"));
-const dbpath = path.join(
-  app.getPath("home"),
-  "shdesk",
-  "realmdb",
-  "data.realm"
-);
+const dirPath = path.join(app.getPath("home"), "shdesk", "realmdb");
 
+const dbpath = path.join(dirPath, "data.realm");
+if (!fs.existsSync(dirPath)) fs.mkdirSync(dirPath);
 const dbConfig: Realm.Configuration = {
   schema: [Person],
   deleteRealmIfMigrationNeeded: true,
