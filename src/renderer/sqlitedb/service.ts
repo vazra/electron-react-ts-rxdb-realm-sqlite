@@ -37,8 +37,8 @@ export const addUserstoDB = async (
   setProgress: React.Dispatch<React.SetStateAction<number>>,
   saveTimeTaken?: React.Dispatch<React.SetStateAction<[number, number]>>
 ) => {
-  setProgress(100);
-  const progrssVal = 0;
+  setProgress(0);
+  let progrssVal = 0;
   const users = await getUserModel();
   const t0 = performance.now();
   const timeTaken = [];
@@ -53,7 +53,11 @@ export const addUserstoDB = async (
   //   await Promise.all(usersListPromise);
   await promiseProgress(usersListPromise, (percent) => {
     // set progress only for 1% increase
-    if (progrssVal + 1 <= percent) setProgress(percent);
+    if (progrssVal + 1 <= percent) {
+      console.log("kke progress => ", percent, progrssVal);
+      progrssVal = Math.ceil(percent);
+      setProgress(percent);
+    }
   });
 
   const ta1 = performance.now();

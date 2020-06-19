@@ -8,7 +8,7 @@ export const getDBDir = (dbname: string, dbfile: string) => {
   console.log("kkk ELECTRON HOME path: ", app.getPath("home"));
   console.log("kkk ELECTRON userData path: ", app.getPath("userData"));
   const dirPath = path.join(app.getPath("userData"), "db", dbname);
-  if (!fs.existsSync(dirPath)) fs.mkdirSync(dirPath);
+  if (!fs.existsSync(dirPath)) fs.mkdirSync(dirPath, { recursive: true });
   return path.join(dirPath, dbfile);
 };
 
