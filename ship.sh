@@ -12,3 +12,5 @@ git rebase $BRANCH
 
 # push 
 git push && git push --tags
+
+git checkout $BRANCH
