@@ -1,14 +1,17 @@
 {
-  "name": "electron-webpack-quick-start",
-  "version": "0.0.3",
+  "name": "reactdeskapp",
+  "version": "0.0.36",
   "license": "MIT",
   "scripts": {
     "dev": "electron-webpack dev",
     "compile": "electron-webpack",
+    "build": "electron-webpack",
     "dist": "yarn compile && electron-builder",
     "ship": "yarn dist  --win --ia32 --publish=always",
-    "postinstall": "electron-builder install-app-deps",
-    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
+    "rebuildrealm": "electron-rebuild -f -w realm --arch ia32",
+    "rebuild": "electron-builder install-app-deps",
+    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null",
+    "pre:r": "prebuild-install -t 8.3.2 -r electron --verbose"
   },
   "dependencies": {
     "@hot-loader/react-dom": "16.13.0",
@@ -18,6 +21,7 @@
     "pouchdb-adapter-idb": "7.2.1",
     "pouchdb-adapter-leveldb": "^7.2.1",
     "pouchdb-adapter-memory": "7.2.1",
+    "pouchdb-adapter-node-websql": "^7.0.0",
     "pouchdb-adapter-websql": "7.0.0",
     "react": "16.13.0",
     "react-bootstrap": "1.0.1",
@@ -28,7 +32,7 @@
     "realm": "^6.0.2",
     "rxdb": "9.1.0",
     "rxjs": "6.5.5",
-    "source-map-support": "^0.5.16"
+    "source-map-support": "^0.5.19"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.10.1",
@@ -39,8 +43,7 @@
     "@types/react-bootstrap-table-next": "4.0.4",
     "@types/react-bootstrap-table2-paginator": "2.1.1",
     "@types/react-dom": "^16.9.8",
-    "electron": "8.3.2",
-    "electron-builder": "^22.7.0",
+    "electron": "8.1.1",
     "electron-webpack": "^2.8.2",
     "electron-webpack-ts": "^4.0.1",
     "typescript": "^3.9.5",

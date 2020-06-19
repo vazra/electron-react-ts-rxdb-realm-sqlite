@@ -135,7 +135,7 @@ export function Dashboard() {
   const adapterLabel = {
     idb: "IndexedDB",
     memory: "In Memmory",
-    websql: "Web SQL",
+    websql: "Node SQL",
     leveldb: "Level DB",
     localstorage: "Local Storage",
   };

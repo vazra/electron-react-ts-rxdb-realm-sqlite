@@ -36,7 +36,8 @@ addRxPlugin(RxDBValidatePlugin);
 
 addRxPlugin(require("pouchdb-adapter-memory"));
 addRxPlugin(require("pouchdb-adapter-idb"));
-addRxPlugin(require("pouchdb-adapter-websql"));
+addRxPlugin(require("pouchdb-adapter-node-websql"));
+// addRxPlugin(require("pouchdb-adapter-websql"));
 addRxPlugin(require("pouchdb-adapter-leveldb"));
 
 const _checkAdapter = () => {
@@ -168,9 +169,11 @@ const collections = [
 const createDB = async (adapter: IAdapter) => {
   console.log("DatabaseService: creating database..");
   let dbname = "testdb";
-  const dirPath = path.join(app.getPath("home"), "shdesk", "leveldb");
+  const dirPath = path.join(app.getPath("home"), "shdesk", "db");
   if (!fs.existsSync(dirPath)) fs.mkdirSync(dirPath);
   if (adapter === "leveldb") dbname = path.join(dirPath, "data.ldb");
+  if (adapter === "websql") dbname = path.join(dirPath, "data.sqlite");
+
   const db: MyDatabase = await createRxDatabase<MyDatabaseCollections>({
     name: dbname, // <- name
     adapter: adapter, // <- storage-adapter
