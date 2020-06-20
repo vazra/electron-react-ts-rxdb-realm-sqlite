@@ -1,34 +1,82 @@
 import React, { useState } from "react";
-import { Container, Jumbotron, Button } from "react-bootstrap";
+import { Container, Navbar, Nav } from "react-bootstrap";
 import RealMDashboard from "./RealMDashboard";
 import RxJsDashboard from "./Dashboard";
+import Logo from "../logo.svg";
+import SQLiteDashboard from "./SQLiteDashboard";
+type IDatabaseMode = "RxDB" | "SQLite" | "Realm";
 
 // interface IHome {
 //   children: React.ReactNode;
 // }
 
 export function Home() {
-  const [isRxDB, setIsRxDB] = useState<boolean>(true);
+  const [databaseMode, setDatabaseMode] = useState<IDatabaseMode>("RxDB");
 
-  const title = isRxDB ? `RxDB ` : `Realm`;
-  const dashboard = isRxDB ? <RxJsDashboard /> : <RealMDashboard />;
+  let dashboard = <></>;
+
+  switch (databaseMode) {
+    case "RxDB":
+      dashboard = <RxJsDashboard />;
+      break;
+    case "Realm":
+      dashboard = <RealMDashboard />;
+      break;
+    case "SQLite":
+      dashboard = <SQLiteDashboard />;
+      break;
+
+    default:
+      dashboard = <></>;
+      break;
+  }
+
+  // const logo = path.join(__static, "/logo.svg");
   return (
-    <Container className="p-3">
-      <Jumbotron style={{ textAlign: "center" }}>
-        <h1 className="header"> {title}- Electron - React</h1>
-        <p>
-          <Button
-            variant="outline-primary"
+    <>
+      <Navbar bg="primary" variant="dark">
+        <Navbar.Brand href="#home">
+          <img
+            src={Logo}
+            width="30"
+            height="30"
+            className="d-inline-block align-top"
+            alt=""
+          />
+        </Navbar.Brand>
+        <Navbar.Brand href="#home">Electron-React</Navbar.Brand>
+        <Nav className="mr-auto">
+          <Nav.Link
+            active={databaseMode === "RxDB"}
             onClick={() => {
-              setIsRxDB((val) => !val);
+              setDatabaseMode("RxDB");
             }}
           >
-            switch to {!isRxDB ? `RxDB ` : `Realm`}
-          </Button>
-        </p>
-      </Jumbotron>
-      {dashboard}
-    </Container>
+            RxDB
+          </Nav.Link>
+          <Nav.Link
+            active={databaseMode === "Realm"}
+            onClick={() => {
+              setDatabaseMode("Realm");
+            }}
+          >
+            Realm
+          </Nav.Link>
+          <Nav.Link
+            active={databaseMode === "SQLite"}
+            onClick={() => {
+              setDatabaseMode("SQLite");
+            }}
+          >
+            SQLite
+          </Nav.Link>
+        </Nav>
+      </Navbar>
+
+      <Container className="p-3" style={{ paddingTop: "300px" }}>
+        {dashboard}
+      </Container>
+    </>
   );
 }
 
