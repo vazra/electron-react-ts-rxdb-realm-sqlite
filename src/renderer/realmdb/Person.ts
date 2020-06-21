@@ -61,4 +61,10 @@ export class Person {
       }
     });
   }
+
+  static deleteAllPersons() {
+    const db = getDB();
+    let allObjects = db.objects(Person);
+    db.write(() => db.delete(allObjects));
+  }
 }

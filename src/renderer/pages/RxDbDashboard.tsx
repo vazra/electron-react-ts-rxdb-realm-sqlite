@@ -202,7 +202,8 @@ export function RxDbDashboard() {
           <Button
             variant="outline-danger"
             className="mb-2"
-            onClick={() => {
+            onClick={async () => {
+              await db?.users.remove();
               reloadUI();
             }}
           >

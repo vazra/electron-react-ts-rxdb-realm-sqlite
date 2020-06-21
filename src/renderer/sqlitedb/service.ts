@@ -125,3 +125,8 @@ export const addUserstoDBV1 = async (
   setProgress(100);
   console.log("done adding users");
 };
+
+export const deleteAllUsers = async () => {
+  const users = await getUserModel();
+  return await users.clear();
+};

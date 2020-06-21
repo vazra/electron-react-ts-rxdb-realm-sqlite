@@ -10,7 +10,12 @@ import {
   Card,
 } from "react-bootstrap";
 import RemoteTable from "../components/RemoteTable";
-import { addUserstoRealm, getDocs, getCount } from "../realmdb/helpers";
+import {
+  addUserstoRealm,
+  getDocs,
+  getCount,
+  deleteAllUsers,
+} from "../realmdb/helpers";
 import { TableChangeType, TableChangeState } from "react-bootstrap-table-next";
 import { Person } from "../realmdb/Person";
 
@@ -140,6 +145,7 @@ export function RealMDashboard() {
             variant="outline-danger"
             className="mb-2"
             onClick={() => {
+              deleteAllUsers();
               reloadUI();
             }}
           >

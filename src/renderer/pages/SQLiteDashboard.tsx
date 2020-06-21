@@ -12,7 +12,12 @@ import {
 import RemoteTable from "../components/RemoteTable";
 import { TableChangeType, TableChangeState } from "react-bootstrap-table-next";
 import { UserDocType } from "../types";
-import { addUserstoDB, getCount, getDocs } from "../sqlitedb/service";
+import {
+  addUserstoDB,
+  getCount,
+  getDocs,
+  deleteAllUsers,
+} from "../sqlitedb/service";
 
 export function SQLiteDashboard() {
   const [users, setUsers] = useState<UserDocType[]>();
@@ -140,7 +145,8 @@ export function SQLiteDashboard() {
           <Button
             variant="outline-danger"
             className="mb-2"
-            onClick={() => {
+            onClick={async () => {
+              await deleteAllUsers();
               reloadUI();
             }}
           >

@@ -64,3 +64,7 @@ export const addUserstoRealm = async (
   console.log("done adding users");
   // process.exit();
 };
+
+export const deleteAllUsers = () => {
+  Person.deleteAllPersons();
+};
