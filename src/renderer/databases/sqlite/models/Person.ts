@@ -1,5 +1,5 @@
 import { db } from "../db";
-import { UserDocType } from "../../types";
+import { UserDocType } from "../../../types";
 import { Model } from "trilogy";
 
 const personSchema = {

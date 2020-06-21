@@ -6,7 +6,7 @@ import {
   RxJsonSchema,
   checkAdapter,
 } from "rxdb";
-import { timeStart, timeEnd, getDBDir } from "../utils/helpers";
+import { timeStart, timeEnd, getDBDir } from "../../utils/helpers";
 import {
   UserCollection,
   UserDocType,
@@ -14,7 +14,7 @@ import {
   MyDatabaseCollections,
   MyDatabase,
   IAdapter,
-} from "../types";
+} from "../../types";
 
 import { RxDBAdapterCheckPlugin } from "rxdb/plugins/adapter-check";
 import { RxDBEncryptionPlugin } from "rxdb/plugins/encryption";

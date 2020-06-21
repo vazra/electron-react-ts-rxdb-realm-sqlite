@@ -1,7 +1,7 @@
 import Realm from "realm";
 
 import { Person } from "./Person";
-import { getDBDir } from "../utils";
+import { getDBDir } from "../../utils";
 
 const dbConfig: Realm.Configuration = {
   schema: [Person],

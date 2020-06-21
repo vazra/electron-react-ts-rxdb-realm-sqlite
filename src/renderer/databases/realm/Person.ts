@@ -1,6 +1,6 @@
 import getDB from "./db";
-import { UserDocType } from "../types";
-import { createAUser } from "../utils";
+import { UserDocType } from "../../types";
+import { createAUser } from "../../utils";
 export const COLL_PERSON = "Person";
 
 export class Person {

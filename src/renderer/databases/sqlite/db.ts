@@ -1,5 +1,5 @@
 import { connect } from "trilogy";
-import { getDBDir } from "../utils";
+import { getDBDir } from "../../utils";
 
 const dbPath = getDBDir("sqlite", "data.sqlite");
 

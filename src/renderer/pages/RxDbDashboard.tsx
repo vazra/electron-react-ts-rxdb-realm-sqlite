@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getDB, changeAdapter } from "../db/db";
+import { getDB, changeAdapter } from "../databases/rxdb/db";
 import { RxDatabase } from "rxdb";
 import { addUserstoDB } from "../utils/helpers";
 import {

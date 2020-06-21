@@ -1,6 +1,6 @@
-import { timeStart, timeEnd, createAUser, promiseProgress } from "../utils";
+import { timeStart, timeEnd, createAUser, promiseProgress } from "../../utils";
 import { getUserModel } from "./models/Person";
-import { UserDocType } from "../types";
+import { UserDocType } from "../../types";
 import { db } from "./db";
 
 export const getCount = async () => {

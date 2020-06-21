@@ -5,7 +5,7 @@ import RxJsDashboard from "./RxDbDashboard";
 import SQLiteDashboard from "./SQLiteDashboard";
 import { version } from "./../../../package.json";
 import { IDatabaseMode } from "../components/DatabaseDetail";
-const logo = require("../logo.svg") as string;
+import logo from "../logo.svg";
 
 export function Home() {
   const [databaseMode, setDatabaseMode] = useState<IDatabaseMode>("RxDB");

@@ -1,5 +1,5 @@
 import Realm from "realm";
-import { UserDocType } from "../types";
+import { UserDocType } from "../../types";
 
 export class Person implements UserDocType {
   name: string = "";

@@ -1,7 +1,7 @@
 // import { Person as KPerson } from "./schema";
 import getDB from "./db";
 // import { UserDocType } from "../types";
-import { timeStart, timeEnd } from "../utils";
+import { timeStart, timeEnd } from "../../utils";
 import { Person } from "./Person";
 
 // const addAUser = (user: UserDocType): KPerson => {

@@ -17,7 +17,7 @@ import {
   getCount,
   getDocs,
   deleteAllUsers,
-} from "../sqlitedb/service";
+} from "../databases/sqlite/service";
 
 export function SQLiteDashboard() {
   const [users, setUsers] = useState<UserDocType[]>();

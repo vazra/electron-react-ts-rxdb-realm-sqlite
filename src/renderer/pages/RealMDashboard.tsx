@@ -15,9 +15,9 @@ import {
   getDocs,
   getCount,
   deleteAllUsers,
-} from "../realmdb/helpers";
+} from "../databases/realm/helpers";
 import { TableChangeType, TableChangeState } from "react-bootstrap-table-next";
-import { Person } from "../realmdb/Person";
+import { Person } from "../databases/realm/Person";
 
 export function RealMDashboard() {
   const [users, setUsers] = useState<Person[]>();
