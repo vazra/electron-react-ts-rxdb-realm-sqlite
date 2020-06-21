@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    ignore:
+     # Ignore auto updates for electron, which may affect prebuild availability for realm
+     - dependency-name: "electron"
+    labels:
+      - "npm"
+      - "deps"
+    open-pull-requests-limit: 10
+
