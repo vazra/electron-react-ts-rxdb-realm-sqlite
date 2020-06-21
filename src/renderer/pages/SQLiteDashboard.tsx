@@ -54,6 +54,7 @@ export function SQLiteDashboard() {
     setTotalCount(0);
     setPage(1);
     setSizePerPage(10);
+    getDocsAndCount(sizePerPage, page);
   };
 
   async function getDocsAndCount(perPageCount: number, pageNo: number) {

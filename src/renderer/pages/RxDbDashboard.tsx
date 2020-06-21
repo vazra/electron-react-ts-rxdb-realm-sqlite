@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getDB, changeAdapter } from "../db/db";
 import { RxDatabase } from "rxdb";
-import { addUserstoDB } from "../utils/helper";
+import { addUserstoDB } from "../utils/helpers";
 import {
   Button,
   Row,
@@ -73,7 +73,7 @@ export function RxDbDashboard() {
     setDB(theDB);
     setPage(1);
     setSizePerPage(10);
-    // await getDocs();
+    await getDocs();
   };
 
   useEffect(() => {

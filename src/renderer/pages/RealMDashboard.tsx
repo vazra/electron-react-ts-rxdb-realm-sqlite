@@ -53,6 +53,7 @@ export function RealMDashboard() {
     setTotalCount(0);
     setPage(1);
     setSizePerPage(10);
+    getDocsAndCount(sizePerPage, page);
   };
 
   function getDocsAndCount(perPageCount: number, pageNo: number) {

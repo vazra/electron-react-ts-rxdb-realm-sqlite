@@ -6,7 +6,7 @@ import {
   RxJsonSchema,
   checkAdapter,
 } from "rxdb";
-import { timeStart, timeEnd } from "../utils/helper";
+import { timeStart, timeEnd, getDBDir } from "../utils/helpers";
 import {
   UserCollection,
   UserDocType,
@@ -20,11 +20,6 @@ import { RxDBAdapterCheckPlugin } from "rxdb/plugins/adapter-check";
 import { RxDBEncryptionPlugin } from "rxdb/plugins/encryption";
 import { RxDBQueryBuilderPlugin } from "rxdb/plugins/query-builder";
 import { RxDBValidatePlugin } from "rxdb/plugins/validate";
-import path from "path";
-import fs from "fs";
-
-const remote = require("electron").remote;
-const app = remote.app;
 
 let dbPromise: Promise<RxDatabase<MyDatabaseCollections>>;
 const supportedAdapters: IAdapter[] = [];
@@ -169,10 +164,8 @@ const collections = [
 const createDB = async (adapter: IAdapter) => {
   console.log("DatabaseService: creating database..");
   let dbname = "testdb";
-  const dirPath = path.join(app.getPath("home"), "shdesk", "db");
-  if (!fs.existsSync(dirPath)) fs.mkdirSync(dirPath);
-  if (adapter === "leveldb") dbname = path.join(dirPath, "data.ldb");
-  if (adapter === "websql") dbname = path.join(dirPath, "data.sqlite");
+  if (adapter === "leveldb") dbname = getDBDir("rxdb", "data.ldb");
+  if (adapter === "websql") dbname = getDBDir("rxdb", "data.sqlite");
 
   const db: MyDatabase = await createRxDatabase<MyDatabaseCollections>({
     name: dbname, // <- name
