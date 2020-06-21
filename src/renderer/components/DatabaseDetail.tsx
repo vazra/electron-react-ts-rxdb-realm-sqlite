@@ -7,7 +7,7 @@ interface IDatabaseDetail {
 }
 
 export function DatabaseDetail({ dbType }: IDatabaseDetail) {
-  return <div className={classes.root} />;
+  return <div />;
 }
 
 export default DatabaseDetail;

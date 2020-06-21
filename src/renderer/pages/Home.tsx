@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { Container, Navbar, Nav, Card } from "react-bootstrap";
 import RealMDashboard from "./RealMDashboard";
 import RxJsDashboard from "./RxDbDashboard";
-import Logo from "../logo.svg";
 import SQLiteDashboard from "./SQLiteDashboard";
 import { version } from "./../../../package.json";
 import { IDatabaseMode } from "../components/DatabaseDetail";
+const logo = require("../logo.svg") as string;
 
 export function Home() {
   const [databaseMode, setDatabaseMode] = useState<IDatabaseMode>("RxDB");
@@ -40,7 +40,7 @@ export function Home() {
           <div>
             <Navbar.Brand href="#home">
               <img
-                src={Logo}
+                src={logo}
                 width="30"
                 height="30"
                 className="d-inline-block align-top"
