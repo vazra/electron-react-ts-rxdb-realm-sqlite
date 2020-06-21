@@ -862,10 +862,10 @@
     "@babel/plugin-transform-react-jsx-source" "^7.10.1"
     "@babel/plugin-transform-react-pure-annotations" "^7.10.1"
 
-"@babel/runtime@7.10.2", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7":
-  version "7.10.2"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.2.tgz#d103f21f2602497d38348a32e008637d506db839"
-  integrity sha512-6sF3uQw2ivImfVIl62RZ7MXhO2tap69WeWK57vAaimT6AZbE4FbqjdEJIN1UqoD6wI6B+1n9UiagafH1sxjOtg==
+"@babel/runtime@7.10.3":
+  version "7.10.3"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.3.tgz#670d002655a7c366540c67f6fd3342cd09500364"
+  integrity sha512-RzGO0RLSdokm9Ipe/YD+7ww8X2Ro79qiXZF3HU9ljrM+qnJmH1Vqth+hbiQZy761LnMJTMitHDuKVYTk3k4dLw==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -873,6 +873,13 @@
   version "7.9.6"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.9.6.tgz#a9102eb5cadedf3f31d08a9ecf294af7827ea29f"
   integrity sha512-64AF1xY3OAkFHqOb9s4jpgk1Mm5vDZ4L3acHvAml+53nO1XbXLuDodsVpO4OIUsmemlUHMxNdYMNJmsvOwLrvQ==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
+"@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7":
+  version "7.10.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.2.tgz#d103f21f2602497d38348a32e008637d506db839"
+  integrity sha512-6sF3uQw2ivImfVIl62RZ7MXhO2tap69WeWK57vAaimT6AZbE4FbqjdEJIN1UqoD6wI6B+1n9UiagafH1sxjOtg==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -1100,12 +1107,7 @@
   resolved "https://registry.yarnpkg.com/@types/is-my-json-valid/-/is-my-json-valid-0.0.20.tgz#602ba9feae73c0c9e9ebdd1c54377c488d91be26"
   integrity sha512-NW5AjsjOWs3KI6lA2lu5l2K3dD7qb+BUivLTdAv57I2yW7W6DC/vGv1/pa7jUealOVDkSshBDw9KP4l3f4uaLw==
 
-"@types/json-schema@7.0.4":
-  version "7.0.4"
-  resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.4.tgz#38fd73ddfd9b55abb1e1b2ed578cb55bd7b7d339"
-  integrity sha512-8+KAKzEvSUdeo+kmqnKrqgeE+LcA0tjYWFY7RPProVYwnqDjukzO+3b6dLD56rYX5TdWejnEOLJYOIeh4CXKuA==
-
-"@types/json-schema@^7.0.4":
+"@types/json-schema@7.0.5", "@types/json-schema@^7.0.4":
   version "7.0.5"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.5.tgz#dcce4430e64b443ba8945f0290fb564ad5bac6dd"
   integrity sha512-7+2BITlgjgDhH0vvwZU/HZJVyk+2XUlvxXe8dFMedNX/aMkaOq++rMAFXc0tM7ij15QaWlbdQASBR9dihi+bDQ==
@@ -4336,13 +4338,13 @@ get-caller-file@^2.0.1:
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
   integrity sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==
 
-get-graphql-from-jsonschema@5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/get-graphql-from-jsonschema/-/get-graphql-from-jsonschema-5.0.1.tgz#6bd56e81460e980568d5f4691b6d116ccffff178"
-  integrity sha512-fSlL6eA8isNkubDPgXvPZsP3p9LOBwxCe59xWlvHvtgnL1/a1x+MP42vGa2ZP3liDbirM7AB07Cnu2+t0WhbCA==
+get-graphql-from-jsonschema@5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/get-graphql-from-jsonschema/-/get-graphql-from-jsonschema-5.0.2.tgz#77d3285116ab8f0c2d3cf09a97ffb4a2774cc9ff"
+  integrity sha512-VkFiogvvIw8C+vwP93O2axHLx/pFl/XDvxB7C/Qd7EG0CzWAhcwjIJiF6ineT0xFPZ+J4za+Pwtlv+diIOa+eg==
   dependencies:
     "@types/common-tags" "1.8.0"
-    "@types/json-schema" "7.0.4"
+    "@types/json-schema" "7.0.5"
     common-tags "1.8.0"
     defekt "5.0.1"
 
@@ -8147,12 +8149,12 @@ runtypes@^4.0.0:
   resolved "https://registry.yarnpkg.com/runtypes/-/runtypes-4.2.0.tgz#6bb01a4683c1ac76015de8669df32a034c6cb0fe"
   integrity sha512-s89DYbxI7qKSpDMmdKQCGg61nH45tYA5LJMR0pWfJ/1nwPdpww75fusQqGzXE7llpk+rwe8fNPSx78FRGKenJg==
 
-rxdb@9.1.0:
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/rxdb/-/rxdb-9.1.0.tgz#f58b489ea1c8dcc65b822c277102861c3fa70f37"
-  integrity sha512-5E8Ta3Qh6jC3Pwuu7/eplQeLBO+qbyRNx/+0pmPW8fwrPLk2+r+CWaYNn7HQEK95joBmjbpeG7ZWUz49AyhhsQ==
+rxdb@9.2.0:
+  version "9.2.0"
+  resolved "https://registry.yarnpkg.com/rxdb/-/rxdb-9.2.0.tgz#fad8b68ca9fe751112fa1e7b348f139fafd481ac"
+  integrity sha512-pdLAvdBwds1UYo4ZUFkIgF8lYVUWL66MwstdeSMHv41BjTnmJ2r+M8RYX9A7yuqgGwL2K+jwqvPaHCXzfEMDIw==
   dependencies:
-    "@babel/runtime" "7.10.2"
+    "@babel/runtime" "7.10.3"
     "@types/clone" "0.1.30"
     "@types/cors" "2.8.6"
     "@types/deep-equal" "1.0.1"
@@ -8171,7 +8173,7 @@ rxdb@9.1.0:
     deep-equal "^2.0.1"
     event-reduce-js "1.0.3"
     express "4.17.1"
-    get-graphql-from-jsonschema "5.0.1"
+    get-graphql-from-jsonschema "5.0.2"
     graphql-client "2.0.1"
     is-electron "2.2.0"
     is-my-json-valid "2.20.0"
