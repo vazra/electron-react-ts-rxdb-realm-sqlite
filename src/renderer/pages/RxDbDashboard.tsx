@@ -13,14 +13,10 @@ import {
   Spinner,
 } from "react-bootstrap";
 import { TableChangeType, TableChangeState } from "react-bootstrap-table-next";
-import RemoteTable from "./RemoteTable";
+import RemoteTable from "../components/RemoteTable";
 import { UserDocType, MyDatabaseCollections, IAdapter } from "../types";
 
-// interface IDashboard {
-//   children: React.ReactNode;
-// }
-
-export function Dashboard() {
+export function RxDbDashboard() {
   const [users, setUsers] = useState<UserDocType[]>();
   const [db, setDB] = useState<RxDatabase<MyDatabaseCollections>>();
   const [totalCount, setTotalCount] = useState<number>(0);
@@ -95,30 +91,12 @@ export function Dashboard() {
       setLoading([false, ""]);
     }
     anyNameFunction();
-
-    // db?.users
-    //   .getDocs(sizePerPage, page, setLatestReadTime)
-    //   .then((docs) => {
-    //     console.log("kkk got new users", docs);
-    //     setUsers(docs);
-    //   })
-    //   .catch((err) => {
-    //     console.error("Failed to get users", err);
-    //   });
   }, [db, page, sizePerPage]);
 
   useEffect(() => {
     // Create an scoped async function in the hook
     async function anyNameFunction() {
       const theDB = await getDB(adapter);
-      // await theDB?.users?.getCount().then((count) => {
-      //   setTotalCount(count);
-      // });
-
-      // await theDB?.users?.getCountPouch().then((count) => {
-      //   setTotalCount(count);
-      // });
-
       await theDB?.users?.getCountWithInfo().then((count) => {
         setTotalCount(count);
       });
@@ -156,12 +134,9 @@ export function Dashboard() {
     type: TableChangeType,
     { page, sizePerPage }: TableChangeState<any>
   ) => {
-    // if (type === "pagination")
     setPage(page);
     setSizePerPage(sizePerPage);
   };
-
-  // fetchCount();
 
   return (
     <>
@@ -284,4 +259,4 @@ export function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default RxDbDashboard;
