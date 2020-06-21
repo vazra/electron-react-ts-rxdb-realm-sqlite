@@ -849,7 +849,7 @@
     "@babel/types" "^7.4.4"
     esutils "^2.0.2"
 
-"@babel/preset-react@^7.10.1":
+"@babel/preset-react@7.10.1":
   version "7.10.1"
   resolved "https://registry.yarnpkg.com/@babel/preset-react/-/preset-react-7.10.1.tgz#e2ab8ae9a363ec307b936589f07ed753192de041"
   integrity sha512-Rw0SxQ7VKhObmFjD/cUcKhPTtzpeviEFX1E6PgP+cYOhQ98icNqtINNFANlsdbQHrmeWnqdxA4Tmnl1jy5tp3Q==
@@ -1039,7 +1039,7 @@
   resolved "https://registry.yarnpkg.com/@types/deep-equal/-/deep-equal-1.0.1.tgz#71cfabb247c22bcc16d536111f50c0ed12476b03"
   integrity sha512-mMUu4nWHLBlHtxXY17Fg6+ucS/MnndyOWyOe7MmwkoMYxvfQU2ajtRaEvqSUv+aVkMqH/C0NCI8UoVfRNQ10yg==
 
-"@types/electron-devtools-installer@^2.2.0":
+"@types/electron-devtools-installer@2.2.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@types/electron-devtools-installer/-/electron-devtools-installer-2.2.0.tgz#32ee4ebbe99b3daf9847a6d2097dc00b5de94f10"
   integrity sha512-HJNxpaOXuykCK4rQ6FOMxAA0NLFYsf7FiPFGmab0iQmtVBHSAfxzy3MRFpLTTDDWbV0yD2YsHOQvdu8yCqtCfw==
@@ -1075,7 +1075,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/generic-pool@^3.1.9":
+"@types/generic-pool@3.1.9":
   version "3.1.9"
   resolved "https://registry.yarnpkg.com/@types/generic-pool/-/generic-pool-3.1.9.tgz#cc82ee0d92561fce713f8f9a7b2380eda8a89dcb"
   integrity sha512-IkXMs8fhV6+E4J8EWv8iL7mLvApcLLQUH4m1Rex3KCPRqT+Xya0DDHIeGAokk/6VXe9zg8oTWyr+FGyeuimEYQ==
@@ -1133,7 +1133,7 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.13.tgz#ee1128e881b874c371374c1f72201893616417c9"
   integrity sha512-rouEWBImiRaSJsVA+ITTFM6ZxibuAlTuNOCyxVbwreu6k6+ujs7DfnU9o+PShFhET78pMBl3eH+AGSI5eOTkPA==
 
-"@types/node@^12.0.12", "@types/node@^12.12.47":
+"@types/node@12.12.47", "@types/node@^12.0.12":
   version "12.12.47"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.47.tgz#5007b8866a2f9150de82335ca7e24dd1d59bdfb5"
   integrity sha512-yzBInQFhdY8kaZmqoL2+3U5dSTMrKaYcb561VU+lDzAYvqt+2lojvBEy+hmpSNuXnPTx7m9+04CzWYOUqWME2A==
@@ -1196,14 +1196,14 @@
   dependencies:
     "@types/react-bootstrap-table-next" "*"
 
-"@types/react-dom@^16.9.8":
+"@types/react-dom@16.9.8":
   version "16.9.8"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.9.8.tgz#fe4c1e11dfc67155733dfa6aa65108b4971cb423"
   integrity sha512-ykkPQ+5nFknnlU6lDd947WbQ6TE3NNzbQAkInC2EKY1qeYdTKp7onFusmYZb+ityzx2YviqT6BXSu+LyWWJwcA==
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^16.9.11", "@types/react@^16.9.23", "@types/react@^16.9.36":
+"@types/react@*", "@types/react@16.9.38", "@types/react@^16.9.11", "@types/react@^16.9.23":
   version "16.9.38"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.38.tgz#868405dace93a4095d3e054f4c4a1de7a1ac0680"
   integrity sha512-pHAeZbjjNRa/hxyNuLrvbxhhnKyKNiLC6I5fRF2Zr/t/S6zS41MiyzH4+c+1I9vVfvuRt1VS2Lodjr4ZWnxrdA==
@@ -3352,7 +3352,7 @@ ejs@^3.1.3:
   dependencies:
     jake "^10.6.1"
 
-electron-builder@^22.7.0:
+electron-builder@22.7.0:
   version "22.7.0"
   resolved "https://registry.yarnpkg.com/electron-builder/-/electron-builder-22.7.0.tgz#a42d08a1654ffc2f7d9e2860829d3cc55d4a0c81"
   integrity sha512-t6E3oMutpST64YWbZCg7HodEwJOsnjUF1vnDIHm2MW6CFZPX8tlCK6efqaV66LU0E0Nkp/JH6TE5bCqQ1+VdPQ==
@@ -3372,6 +3372,15 @@ electron-builder@^22.7.0:
     update-notifier "^4.1.0"
     yargs "^15.3.1"
 
+electron-devtools-installer@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/electron-devtools-installer/-/electron-devtools-installer-3.0.0.tgz#b5c439708746ed36f7b0220e18657567bca275d8"
+  integrity sha512-zll3w/8PvnPiGmL5tBtgSSoSjWnUljsOjJYsYYU12PKLljzWyfD6S75LKTZFn21VYxVbae2OwmjM5uFStLp6nQ==
+  dependencies:
+    rimraf "^3.0.2"
+    semver "^7.2.1"
+    unzip-crx "^0.2.0"
+
 electron-devtools-installer@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/electron-devtools-installer/-/electron-devtools-installer-2.2.4.tgz#261a50337e37121d338b966f07922eb4939a8763"
@@ -3381,15 +3390,6 @@ electron-devtools-installer@^2.2.4:
     cross-unzip "0.0.2"
     rimraf "^2.5.2"
     semver "^5.3.0"
-
-electron-devtools-installer@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/electron-devtools-installer/-/electron-devtools-installer-3.0.0.tgz#b5c439708746ed36f7b0220e18657567bca275d8"
-  integrity sha512-zll3w/8PvnPiGmL5tBtgSSoSjWnUljsOjJYsYYU12PKLljzWyfD6S75LKTZFn21VYxVbae2OwmjM5uFStLp6nQ==
-  dependencies:
-    rimraf "^3.0.2"
-    semver "^7.2.1"
-    unzip-crx "^0.2.0"
 
 electron-publish@22.7.0:
   version "22.7.0"
@@ -3421,7 +3421,7 @@ electron-webpack-js@~2.4.1:
     babel-loader "^8.1.0"
     babel-plugin-component "^1.1.1"
 
-electron-webpack-ts@^4.0.1:
+electron-webpack-ts@4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/electron-webpack-ts/-/electron-webpack-ts-4.0.1.tgz#bb54d4c7a0d3626e579bdf88f0a4014d4417bc41"
   integrity sha512-XzuQva+xm6T8LJbky0cLc+Cg4NCKMFXbMypyPsL5uXW4UmTVWQCli27Yg9ljpmBMYMi+8TtAFBS/MvvPegKCGg==
@@ -3429,7 +3429,7 @@ electron-webpack-ts@^4.0.1:
     fork-ts-checker-webpack-plugin "^4.1.2"
     ts-loader "^6.2.2"
 
-electron-webpack@^2.8.2:
+electron-webpack@2.8.2:
   version "2.8.2"
   resolved "https://registry.yarnpkg.com/electron-webpack/-/electron-webpack-2.8.2.tgz#5a0357ce8f7d147e5f559294a08bb072d1092b0a"
   integrity sha512-rR7hxoOlZIcJf6R08mVl/4TBtFY+HW6sv4Z28TdMWETvcM4ZBIBdGNGylxF0gNwB8gkTgo8UkkDbXGX48K4Vow==
@@ -7105,7 +7105,7 @@ pouchdb-adapter-leveldb-core@7.2.1:
     sublevel-pouchdb "7.2.1"
     through2 "3.0.1"
 
-pouchdb-adapter-leveldb@^7.2.1:
+pouchdb-adapter-leveldb@7.2.1:
   version "7.2.1"
   resolved "https://registry.yarnpkg.com/pouchdb-adapter-leveldb/-/pouchdb-adapter-leveldb-7.2.1.tgz#ad49472f7f99960b0b45ee720802a0f647f495f3"
   integrity sha512-vmp0MqsC6moPsV1S5qb3WCUEjS5nOtUTfGBMoECcwBsSX3K/JoyGZ0QaND+9Uhmdvr+xK02eRX7a4oGdo6jEMw==
@@ -7127,7 +7127,7 @@ pouchdb-adapter-memory@7.2.1:
     pouchdb-adapter-leveldb-core "7.2.1"
     pouchdb-utils "7.2.1"
 
-pouchdb-adapter-node-websql@^7.0.0:
+pouchdb-adapter-node-websql@7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/pouchdb-adapter-node-websql/-/pouchdb-adapter-node-websql-7.0.0.tgz#64ad88dd45b23578e454bf3032a3a79f9d1e4008"
   integrity sha512-fNaOMO8bvMrRTSfmH4RSLSpgnKahRcCA7Z0jg732PwRbGvvMdGbreZwvKPPD1fg2tm2ZwwiXWK2G3+oXyoqZYw==
@@ -7706,7 +7706,7 @@ react-dom@16.13.0:
     prop-types "^15.6.2"
     scheduler "^0.19.0"
 
-react-hot-loader@^4.12.21:
+react-hot-loader@4.12.21:
   version "4.12.21"
   resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-4.12.21.tgz#332e830801fb33024b5a147d6b13417f491eb975"
   integrity sha512-Ynxa6ROfWUeKWsTHxsrL2KMzujxJVPjs385lmB2t5cHUxdoRPGind9F00tOkdc1l5WBleOF4XEAMILY1KPIIDA==
@@ -7851,7 +7851,7 @@ readdirp@~3.4.0:
   dependencies:
     picomatch "^2.2.1"
 
-realm@^6.0.2:
+realm@6.0.2:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/realm/-/realm-6.0.2.tgz#d51abb9be03ddbf5a16fbe9c65cb8e09889c7d4b"
   integrity sha512-hcTbzkNBn0gB8mBe4dOfnci7ae3pPTAvYx7bk4S4VacAcumtfiNSs3rQPuFP3PDoL+qNXaugaupevi6k/hGyjA==
@@ -8503,7 +8503,7 @@ source-map-resolve@^0.5.0:
     source-map-url "^0.4.0"
     urix "^0.1.0"
 
-source-map-support@^0.5.16, source-map-support@^0.5.19, source-map-support@~0.5.12:
+source-map-support@0.5.19, source-map-support@^0.5.16, source-map-support@^0.5.19, source-map-support@~0.5.12:
   version "0.5.19"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.19.tgz#a98b62f86dcaf4f67399648c085291ab9e8fed61"
   integrity sha512-Wonm7zOCIJzBGQdB+thsPar0kYuCIzYvxZwlBa87yi/Mdjv7Tip2cyVbLj5o0cFPN4EVkuTwb3GDDyUx2DGnGw==
@@ -8621,12 +8621,12 @@ sprintf-js@~1.0.2:
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
-sql.js@^1.3.0:
+sql.js@1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/sql.js/-/sql.js-1.3.0.tgz#b98c159535cf3e25551f28e98e4dc9cf5849cfc5"
   integrity sha512-bxrJ/9rqJ2SA6hpHnSodRjKBugZHewRvNTITTt74W1VZWmzODjdS68yQW0/J9oC0NWKylHEtV1ptkoTyOYO4Tw==
 
-sqlite3@^4.0.0, sqlite3@^4.2.0:
+sqlite3@4.2.0, sqlite3@^4.0.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/sqlite3/-/sqlite3-4.2.0.tgz#49026d665e9fc4f922e56fb9711ba5b4c85c4901"
   integrity sha512-roEOz41hxui2Q7uYnWsjMOTry6TcNUNmp8audCx18gF10P2NknwdpF+E+HKvz/F2NvPKGGBF4NGc+ZPQ+AABwg==
@@ -9106,7 +9106,7 @@ tough-cookie@^2.3.1, tough-cookie@^2.3.3, tough-cookie@~2.5.0:
     psl "^1.1.28"
     punycode "^2.1.1"
 
-trilogy@^2.0.2:
+trilogy@2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/trilogy/-/trilogy-2.0.2.tgz#c70709e10eb917db64802fd0d07562f362a98332"
   integrity sha512-KMYR2Af5TqrPoY9XAkp9fMeWmtWkWz+T4kKCoAp9tjajUoI+o4lOmAiNZSZbe/4WwX09H8uPdhADNq8kT6XMrg==
@@ -9191,7 +9191,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^3.9.5:
+typescript@3.9.5:
   version "3.9.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.5.tgz#586f0dba300cde8be52dd1ac4f7e1009c1b13f36"
   integrity sha512-hSAifV3k+i6lEoCJ2k6R2Z/rp/H3+8sdmcn5NrS3/3kE7+RyZXm9aqvxWqjEXHAd8b0pShatpcdMTvEdvAJltQ==
@@ -9647,7 +9647,7 @@ webpack-sources@^1.1.0, webpack-sources@^1.4.0, webpack-sources@^1.4.1, webpack-
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack@~4.42.1:
+webpack@4.42.1:
   version "4.42.1"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.42.1.tgz#ae707baf091f5ca3ef9c38b884287cfe8f1983ef"
   integrity sha512-SGfYMigqEfdGchGhFFJ9KyRpQKnipvEvjc1TwrXEPCM6H5Wywu10ka8o3KGrMzSMxMQKt8aCHUFh5DaQ9UmyRg==
