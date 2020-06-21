@@ -9,7 +9,7 @@ updates:
       - dependency-name: "electron"
       - dependency-name: "@types/node"
         # For @types/node, ignore all updates for version non LTS version
-        versions: ["14.x"]
+        versions: ["13.x", "14.x"]
 
     labels:
       - "deps"
