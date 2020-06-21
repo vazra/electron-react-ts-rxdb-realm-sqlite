@@ -66,16 +66,14 @@ export function RxDbDashboard() {
   };
 
   const reloadUI = async () => {
-    setProgress(0);
-    setPage(1);
-    setSizePerPage(10);
     setUsers([]);
     setTotalCount(0);
-
+    setProgress(0);
     const theDB = await getDB(adapter);
     setDB(theDB);
-
-    await getDocs();
+    setPage(1);
+    setSizePerPage(10);
+    // await getDocs();
   };
 
   useEffect(() => {
