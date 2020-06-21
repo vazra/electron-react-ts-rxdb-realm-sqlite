@@ -32,7 +32,5 @@ export const testRealm = () => {
       });
       console.timeEnd(test);
     }
-
-    // process.exit();
   });
 };

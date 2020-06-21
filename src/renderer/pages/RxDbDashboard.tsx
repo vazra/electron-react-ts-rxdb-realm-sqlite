@@ -78,7 +78,6 @@ export function RxDbDashboard() {
 
   useEffect(() => {
     async function anyNameFunction() {
-      console.log("here", sizePerPage, page);
       setLoading([true, "initializing database"]);
       const users = await db?.users?.getDocs(
         sizePerPage,

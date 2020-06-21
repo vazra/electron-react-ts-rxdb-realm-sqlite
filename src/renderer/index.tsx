@@ -1,4 +1,3 @@
-console.log("hi from renderer... ");
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";

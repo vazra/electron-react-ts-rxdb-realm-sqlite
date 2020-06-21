@@ -13,7 +13,6 @@ export const getCount = () => {
   const t0 = timeStart();
 
   const count = getDB().objects(Person).length;
-
   console.log("Total users Count: ", count);
   timeEnd(t0, `getCount - ${count}`);
   return count;
@@ -24,7 +23,6 @@ export const getDocs = (
   page: number = 1,
   saveTimeTaken?: React.Dispatch<React.SetStateAction<[number, number]>>
 ) => {
-  console.log("getDocs");
   const t0 = timeStart();
   const allDocs = getDB().objects<Person>(Person).filtered("phone != name");
   const skip = (page - 1) * count;
@@ -48,7 +46,6 @@ export const addUserstoRealm = async (
   const timeTaken = [];
   // if the chunk is the default one set it to an appropriate value (max of 100 or .5% increment is considered)
   let docID = getCount();
-  console.log("Starting ID is ", docID);
   const ta0 = performance.now();
   Person.AddDummyPersons(total, docID);
   const ta1 = performance.now();
@@ -62,7 +59,6 @@ export const addUserstoRealm = async (
   saveTimeTaken && saveTimeTaken([+(ta1 - ta0).toFixed(2), total]);
   setProgress(100);
   console.log("done adding users");
-  // process.exit();
 };
 
 export const deleteAllUsers = () => {

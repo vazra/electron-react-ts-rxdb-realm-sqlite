@@ -40,7 +40,6 @@ export function RealMDashboard() {
   useEffect(() => {
     async function anyNameFunction() {
       setLoading([true, "initializing database"]);
-      console.log("start === ", "addUserstoRealm");
       await addUserstoRealm(100, setProgress, setLatestWriteTime);
       setLoading([false, ""]);
     }
@@ -64,7 +63,7 @@ export function RealMDashboard() {
   }
 
   useEffect(() => {
-    console.log("pagechanged === ", "getDocsAndCount", page, sizePerPage);
+    console.log("pagechanged -", "getDocsAndCount", page, sizePerPage);
     getDocsAndCount(sizePerPage, page);
   }, [page, sizePerPage]);
 

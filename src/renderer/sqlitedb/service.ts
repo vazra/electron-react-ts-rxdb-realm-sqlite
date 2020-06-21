@@ -46,7 +46,6 @@ export const addUserstoDB = async (
 
   const chunkArray = Array(Math.floor(total / chunk)).fill(chunk);
   if (total % chunk > 0) chunkArray.push(total % chunk);
-  //   console.log("chunk arry", chunkArray);
   let done = 0;
 
   for (const aChunk of chunkArray) {
@@ -55,16 +54,11 @@ export const addUserstoDB = async (
       userArry.push(createAUser());
     }
     const ta0 = performance.now();
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    // /* const result = */ await db?.users.bulkInsert(userArry);
     await db.knex<UserDocType>("users").insert(userArry);
     const ta1 = performance.now();
     timeTaken.push(ta1 - ta0);
     done = done + aChunk;
     setProgress(+((done / total) * 100).toFixed(1));
-    // console.log(
-    //   `inserted ${result?.success.length} docs & failed ${result?.error.length} docs`
-    // );
   }
   const t1 = performance.now();
   console.log(
@@ -81,7 +75,6 @@ export const addUserstoDB = async (
   );
   saveTimeTaken &&
     saveTimeTaken([+timeTaken.reduce((a, b) => a + b, 0).toFixed(2), done]);
-  // console.log(db);
 };
 
 export const addUserstoDBV1 = async (

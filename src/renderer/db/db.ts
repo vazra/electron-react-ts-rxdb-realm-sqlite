@@ -95,7 +95,7 @@ const userCollectionMethods: UserCollectionMethods = {
     const t0 = timeStart();
 
     const entries = await this.pouch.allDocs().catch((err) => {
-      console.log("failed alldocs", err);
+      console.log("failed to get Count with Pouch", err);
     });
     console.log("Total users Count: ", entries.rows.length);
     timeEnd(t0, `getCountPouch - ${entries.rows.length}`);
@@ -177,28 +177,7 @@ const createDB = async (adapter: IAdapter) => {
 
   console.dir(db);
   console.log("DatabaseService: created database");
-  // window.db = db; // write to window for debugging
-
-  // create collections
-  // console.log("DatabaseService: create collections");
   await Promise.all(collections.map((colData) => db.collection(colData)));
-
-  // hooks
-  // console.log("DatabaseService: add hooks");
-  // db.heroes.postInsert(
-  //   function myPostInsertHook(
-  //     this: HeroCollection, // own collection is bound to the scope
-  //     _docData: HeroDocType, // documents data
-  //     doc: HeroDocument // RxDocument
-  //   ) {
-  //     console.log(`insert to ${this.name}-collection: ${doc.name}`);
-  //   },
-  //   false // not async
-  // );
-
-  // TODO   : A function to input collectionId, and sync it with firestore db
-  // db.$.subscribe((changeEvent) => console.dir(changeEvent));
-
   return db;
 };
 

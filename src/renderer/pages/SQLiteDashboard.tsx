@@ -40,8 +40,6 @@ export function SQLiteDashboard() {
     // create the databse
     async function anyNameFunction() {
       setLoading([true, "initializing database"]);
-      //   testRe alm();
-      console.log("start === ", "addUserstoSQLite");
       await addUserstoDB(100, setProgress, setLatestWriteTime);
       setLoading([false, ""]);
     }
@@ -65,7 +63,7 @@ export function SQLiteDashboard() {
   }
 
   useEffect(() => {
-    console.log("pagechanged === ", "getDocsAndCount", page, sizePerPage);
+    console.log("pagechanged - ", "getDocsAndCount", page, sizePerPage);
     getDocsAndCount(sizePerPage, page);
   }, [page, sizePerPage]);
 

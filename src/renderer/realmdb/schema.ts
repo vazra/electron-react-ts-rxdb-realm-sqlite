@@ -7,9 +7,6 @@ export class Person implements UserDocType {
   address: string = "";
   area?: string | undefined;
   static schema: Realm.ObjectSchema;
-  // get fullName() {
-  //   return "Mr." + name;
-  // }
 }
 
 Person.schema = {

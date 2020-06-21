@@ -10,11 +10,11 @@ const remote = require("electron").remote;
 const app = remote.app;
 
 export const getDBDir = (dbname: string, dbfile: string) => {
-  console.log("kkk ELECTRON HOME path: ", app.getPath("home"));
-  console.log("kkk ELECTRON userData path: ", app.getPath("userData"));
   const dirPath = path.join(app.getPath("userData"), "db", dbname);
   if (!fs.existsSync(dirPath)) fs.mkdirSync(dirPath, { recursive: true });
-  return path.join(dirPath, dbfile);
+  const dbPath = path.join(dirPath, dbfile);
+  console.log("DB_PATH: ", dbPath);
+  return dbPath;
 };
 
 export function promiseProgress(
@@ -74,9 +74,6 @@ export const addUserstoDB = async (
     timeTaken.push(ta1 - ta0);
     done = done + aChunk;
     setProgress(+((done / total) * 100).toFixed(1));
-    // console.log(
-    //   `inserted ${result?.success.length} docs & failed ${result?.error.length} docs`
-    // );
   }
   const t1 = performance.now();
   console.log(
@@ -95,7 +92,6 @@ export const addUserstoDB = async (
   );
   saveTimeTaken &&
     saveTimeTaken([+timeTaken.reduce((a, b) => a + b, 0).toFixed(2), done]);
-  // console.log(db);
 };
 
 // helper function thart starts performace - time measurement
