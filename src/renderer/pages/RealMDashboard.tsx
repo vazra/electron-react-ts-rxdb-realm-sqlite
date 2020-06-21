@@ -9,17 +9,13 @@ import {
   ButtonGroup,
   Card,
 } from "react-bootstrap";
-import RemoteTable from "./RemoteTable";
+import RemoteTable from "../components/RemoteTable";
+import { addUserstoRealm, getDocs, getCount } from "../realmdb/helpers";
 import { TableChangeType, TableChangeState } from "react-bootstrap-table-next";
-import { UserDocType } from "../types";
-import { addUserstoDB, getCount, getDocs } from "../sqlitedb/service";
+import { Person } from "../realmdb/Person";
 
-// interface ISQLiteDashboard {
-//   children: React.ReactNode;
-// }
-
-export function SQLiteDashboard() {
-  const [users, setUsers] = useState<UserDocType[]>();
+export function RealMDashboard() {
+  const [users, setUsers] = useState<Person[]>();
   // const [db, setDB] = useState<RxDatabase<MyDatabaseCollections>>();
   const [totalCount, setTotalCount] = useState<number>(0);
   const [addCount, setAddCount] = useState<number>(100);
@@ -37,19 +33,10 @@ export function SQLiteDashboard() {
   ]);
 
   useEffect(() => {
-    // create the databse
     async function anyNameFunction() {
       setLoading([true, "initializing database"]);
-      //   testRe alm();
-      console.log("start === ", "addUserstoSQLite");
-      await addUserstoDB(100, setProgress, setLatestWriteTime);
-
-      // console.log("start === ", "getCount");
-      // setTotalCount(getCount());
-
-      // console.log("start === ", "getDocs");
-      // const users = getDocs(10, 1, setLatestReadTime);
-      // setUsers(users);
+      console.log("start === ", "addUserstoRealm");
+      await addUserstoRealm(100, setProgress, setLatestWriteTime);
       setLoading([false, ""]);
     }
     anyNameFunction();
@@ -63,10 +50,10 @@ export function SQLiteDashboard() {
     setSizePerPage(10);
   };
 
-  async function getDocsAndCount(perPageCount: number, pageNo: number) {
-    const count = await getCount();
+  function getDocsAndCount(perPageCount: number, pageNo: number) {
+    const count = getCount();
     setTotalCount(count);
-    const newUsers = await getDocs(perPageCount, pageNo, setLatestReadTime);
+    const newUsers = getDocs(perPageCount, pageNo, setLatestReadTime);
     setUsers(newUsers);
   }
 
@@ -84,7 +71,7 @@ export function SQLiteDashboard() {
   const handleAddSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setProgress(0);
-    await addUserstoDB(addCount, setProgress, setLatestWriteTime);
+    await addUserstoRealm(addCount, setProgress, setLatestWriteTime);
     setAddCount(100);
     getDocsAndCount(sizePerPage, page);
   };
@@ -93,7 +80,6 @@ export function SQLiteDashboard() {
     type: TableChangeType,
     { page, sizePerPage }: TableChangeState<any>
   ) => {
-    // if (type === "pagination")
     setPage(page);
     setSizePerPage(sizePerPage);
   };
@@ -208,4 +194,4 @@ export function SQLiteDashboard() {
   );
 }
 
-export default SQLiteDashboard;
+export default RealMDashboard;
