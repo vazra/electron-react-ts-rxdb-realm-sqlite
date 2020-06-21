@@ -10,7 +10,7 @@
     },
     {
       "depTypeList": ["devDependencies"],
-      "automerge": false
+      "automerge": true
     }
   ]  
 }
