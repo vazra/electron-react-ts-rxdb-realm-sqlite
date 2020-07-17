@@ -51,7 +51,7 @@
     "electron-builder": "^22.7.0",
     "electron-webpack": "^2.8.2",
     "electron-webpack-ts": "^4.0.1",
-    "typescript": "^3.9.6",
+    "typescript": "^3.9.7",
     "webpack": "~4.43.0"
   }
 }
