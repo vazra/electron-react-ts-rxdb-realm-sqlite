@@ -27,7 +27,7 @@
     "react-bootstrap": "1.2.2",
     "react-bootstrap-table-next": "4.0.3",
     "react-bootstrap-table2-paginator": "2.1.2",
-    "react-dom": "16.13.0",
+    "react-dom": "16.13.1",
     "react-hot-loader": "^4.12.21",
     "realm": "^6.0.2",
     "rxdb": "9.3.0",
