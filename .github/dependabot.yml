@@ -6,11 +6,12 @@ updates:
       interval: "daily"
     ignore:
       # Ignore auto updates for electron, which may affect prebuild availability for realm
-      - dependency-name: "electron"
       - dependency-name: "@types/node"
         # For @types/node, ignore all updates for version non LTS version
-        versions: ["13.x", "14.x"]
+        versions: ["13.x"]
 
+    reviewers:
+      - 'vazra'
     labels:
-      - "deps"
-    open-pull-requests-limit: 10
+      - 'dependencies'
+    open-pull-requests-limit: 5
