@@ -873,10 +873,10 @@
     "@babel/plugin-transform-react-jsx-source" "^7.10.4"
     "@babel/plugin-transform-react-pure-annotations" "^7.10.4"
 
-"@babel/runtime@7.10.3", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7":
-  version "7.10.3"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.3.tgz#670d002655a7c366540c67f6fd3342cd09500364"
-  integrity sha512-RzGO0RLSdokm9Ipe/YD+7ww8X2Ro79qiXZF3HU9ljrM+qnJmH1Vqth+hbiQZy761LnMJTMitHDuKVYTk3k4dLw==
+"@babel/runtime@7.10.5", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7":
+  version "7.10.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.5.tgz#303d8bd440ecd5a491eae6117fd3367698674c5c"
+  integrity sha512-otddXKhdNn7d0ptoFRHtMLa8LqDxLYwTjB4nYgM1yy5N6gU/MUf8zqyyLltCH3yAVitBzmwK4us+DD0l/MauAg==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -1073,10 +1073,10 @@
     "@types/qs" "*"
     "@types/range-parser" "*"
 
-"@types/express@*", "@types/express@4.17.6":
-  version "4.17.6"
-  resolved "https://registry.yarnpkg.com/@types/express/-/express-4.17.6.tgz#6bce49e49570507b86ea1b07b806f04697fac45e"
-  integrity sha512-n/mr9tZI83kd4azlPG5y997C/M4DNABK9yErhFM6hKdym4kkmd9j0vtsJyjFIwfRBxtrxZtAfGZCNRIBMFLK5w==
+"@types/express@*", "@types/express@4.17.7":
+  version "4.17.7"
+  resolved "https://registry.yarnpkg.com/@types/express/-/express-4.17.7.tgz#42045be6475636d9801369cd4418ef65cdb0dd59"
+  integrity sha512-dCOT5lcmV/uC2J9k0rPafATeeyz+99xTt54ReX11/LObZgfzJqZNcW27zGhYyX+9iSEGXGt5qLPwRSvBZcLvtQ==
   dependencies:
     "@types/body-parser" "*"
     "@types/express-serve-static-core" "*"
@@ -3062,10 +3062,10 @@ default-gateway@^4.2.0:
     execa "^1.0.0"
     ip-regex "^2.1.0"
 
-defekt@5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/defekt/-/defekt-5.0.1.tgz#111ebdf72d30699629b92d97815d5f11f09d1d1b"
-  integrity sha512-UIBq4ST84UXgEh7z5Hy8FX8NIwzMPEMoV3LP9JX/JS4XRQGnSeEgHO7RNQIbeqvWgjYKDMiTmn/YaELhJ4rEBg==
+defekt@5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/defekt/-/defekt-5.1.0.tgz#11ab752e13241d983a157c16f484889426297684"
+  integrity sha512-HxTr9DvB/tzzUI1+EybPi5jHHlz4Pe4WoEkf+lM7jf4uHDH/IuP/W+lO6gzYwgavp/Gn4QM5yGGAzMkX53v6fw==
   dependencies:
     humanize-string "2.1.0"
 
@@ -4385,15 +4385,15 @@ get-caller-file@^2.0.1:
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
   integrity sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==
 
-get-graphql-from-jsonschema@5.0.2:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/get-graphql-from-jsonschema/-/get-graphql-from-jsonschema-5.0.2.tgz#77d3285116ab8f0c2d3cf09a97ffb4a2774cc9ff"
-  integrity sha512-VkFiogvvIw8C+vwP93O2axHLx/pFl/XDvxB7C/Qd7EG0CzWAhcwjIJiF6ineT0xFPZ+J4za+Pwtlv+diIOa+eg==
+get-graphql-from-jsonschema@5.0.3:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/get-graphql-from-jsonschema/-/get-graphql-from-jsonschema-5.0.3.tgz#2edf73df1799fcce6e1c1e436e0a9bb5a00fa463"
+  integrity sha512-QY8ofyrE1FMLTX9hzrQ4JJpZMZ5HSWG80L9Qwo6lLLksjLiZRrmhHQ1mc5xRJQTX3gH93HAn0UYLvqS155rEyQ==
   dependencies:
     "@types/common-tags" "1.8.0"
     "@types/json-schema" "7.0.5"
     common-tags "1.8.0"
-    defekt "5.0.1"
+    defekt "5.1.0"
 
 get-stream@^4.0.0, get-stream@^4.1.0:
   version "4.1.0"
@@ -5256,10 +5256,10 @@ is-my-ip-valid@^1.0.0:
   resolved "https://registry.yarnpkg.com/is-my-ip-valid/-/is-my-ip-valid-1.0.0.tgz#7b351b8e8edd4d3995d4d066680e664d94696824"
   integrity sha512-gmh/eWXROncUzRnIa1Ubrt5b8ep/MGSnfAUI3aRp+sqTCs1tv1Isl8d8F6JmkN3dXKc3ehZMrtiPN9eL03NuaQ==
 
-is-my-json-valid@2.20.0:
-  version "2.20.0"
-  resolved "https://registry.yarnpkg.com/is-my-json-valid/-/is-my-json-valid-2.20.0.tgz#1345a6fca3e8daefc10d0fa77067f54cedafd59a"
-  integrity sha512-XTHBZSIIxNsIsZXg7XB5l8z/OBFosl1Wao4tXLpeC7eKU4Vm/kdop2azkPqULwnfGQjmeDIyey9g7afMMtdWAA==
+is-my-json-valid@2.20.5:
+  version "2.20.5"
+  resolved "https://registry.yarnpkg.com/is-my-json-valid/-/is-my-json-valid-2.20.5.tgz#5eca6a8232a687f68869b7361be1612e7512e5df"
+  integrity sha512-VTPuvvGQtxvCeghwspQu1rBgjYUT6FGxPlvFKbYuFtgc4ADsX3U5ihZOYN0qyU6u+d4X9xXb0IT5O6QpXKt87A==
   dependencies:
     generate-function "^2.0.0"
     generate-object-property "^1.1.0"
@@ -5584,10 +5584,10 @@ jsonpointer@^4.0.0:
   resolved "https://registry.yarnpkg.com/jsonpointer/-/jsonpointer-4.0.1.tgz#4fd92cb34e0e9db3c89c8622ecf51f9b978c6cb9"
   integrity sha1-T9kss04OnbPInIYi7PUfm5eMbLk=
 
-jsonschema-key-compression@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/jsonschema-key-compression/-/jsonschema-key-compression-1.1.1.tgz#c0e795d5bce25ef2781af8f0e5c6650f0d89ce02"
-  integrity sha512-Hn3YxTy9FLLSfDsGUVYtBZDw0jDMukNYlClS5F3q+hao1Rq3tTfsEvUbo91IpoDy2o2PToRwI5OTbN9ShAhjuw==
+jsonschema-key-compression@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/jsonschema-key-compression/-/jsonschema-key-compression-1.2.0.tgz#967c610f2646394156bc144d3893b2c051dd502a"
+  integrity sha512-flFd8aY76q3R4qxJ/WAtsRxI3xfBY+k4UfmdECrdr5/jddoIUi/Vod2ruDTsR0r/w3E48YyXB183O8IDxNt3nQ==
 
 jsprim@^1.2.2:
   version "1.4.1"
@@ -8234,16 +8234,16 @@ runtypes@^4.0.0:
   resolved "https://registry.yarnpkg.com/runtypes/-/runtypes-4.2.0.tgz#6bb01a4683c1ac76015de8669df32a034c6cb0fe"
   integrity sha512-s89DYbxI7qKSpDMmdKQCGg61nH45tYA5LJMR0pWfJ/1nwPdpww75fusQqGzXE7llpk+rwe8fNPSx78FRGKenJg==
 
-rxdb@9.3.0:
-  version "9.3.0"
-  resolved "https://registry.yarnpkg.com/rxdb/-/rxdb-9.3.0.tgz#88ad72838da81c20558f7e9a6dcc6c717995f6f1"
-  integrity sha512-HeCdsdPwmopbqLqRDMAPl4AlIhSR4ZF2Yd19Fj29BoFYEudpophTndVx+OU5tKQBYnTjhHw01MAcexSv9bYOHw==
+rxdb@9.4.0:
+  version "9.4.0"
+  resolved "https://registry.yarnpkg.com/rxdb/-/rxdb-9.4.0.tgz#ef77f2ca53c26412067673c827dc1f68c706698a"
+  integrity sha512-Rp+A27N+9b8Z8KyZvFHRn342CipsNtbmGGoiibAcNCKBYU2Oi60wxbNFcqXZtrfTLka2LHQlTwDbJ/MW5aIwwA==
   dependencies:
-    "@babel/runtime" "7.10.3"
+    "@babel/runtime" "7.10.5"
     "@types/clone" "0.1.30"
     "@types/cors" "2.8.6"
     "@types/deep-equal" "1.0.1"
-    "@types/express" "4.17.6"
+    "@types/express" "4.17.7"
     "@types/is-my-json-valid" "0.0.20"
     "@types/object-path" "0.11.0"
     "@types/pouchdb-core" "7.0.6"
@@ -8258,11 +8258,11 @@ rxdb@9.3.0:
     deep-equal "^2.0.1"
     event-reduce-js "1.0.3"
     express "4.17.1"
-    get-graphql-from-jsonschema "5.0.2"
+    get-graphql-from-jsonschema "5.0.3"
     graphql-client "2.0.1"
     is-electron "2.2.0"
-    is-my-json-valid "2.20.0"
-    jsonschema-key-compression "1.1.1"
+    is-my-json-valid "2.20.5"
+    jsonschema-key-compression "1.2.0"
     modifyjs "0.3.1"
     object-path "0.11.4"
     pouchdb-all-dbs "1.0.2"
