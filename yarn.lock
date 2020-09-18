@@ -7877,10 +7877,10 @@ readdirp@~3.4.0:
   dependencies:
     picomatch "^2.2.1"
 
-realm@^6.1.1:
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/realm/-/realm-6.1.1.tgz#7765d4671affc2a75779fc5826e668b3aaf563e9"
-  integrity sha512-/GxH8oQWrsKHx1mcuScXhyPzNjFRRf+q5ET/fqkgugZGRLnIC54SItflHnh7RNEblkxqDD40wuuPX/U5+2defA==
+realm@^6.1.2:
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/realm/-/realm-6.1.2.tgz#9716c16e6f30a0a3a957d5cefe38283ecbd07625"
+  integrity sha512-hv2FcsqRew6r3mH82eFcYfcxJcA68l6O27bVMUYtWqwosdPL7fZCDyFExlN65OvhAyNCd0qufEWSQw3Hq1S9tQ==
   dependencies:
     command-line-args "^4.0.6"
     deepmerge "2.1.0"
