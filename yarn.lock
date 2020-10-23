@@ -7157,6 +7157,17 @@ pouchdb-abstract-mapreduce@7.2.2:
     pouchdb-md5 "7.2.2"
     pouchdb-utils "7.2.2"
 
+pouchdb-adapter-http@7.2.2:
+  version "7.2.2"
+  resolved "https://registry.yarnpkg.com/pouchdb-adapter-http/-/pouchdb-adapter-http-7.2.2.tgz#7b04a247aae5db67af6ea8567cc93b2aca8e282f"
+  integrity sha512-6Z6umJq7b5sRXwDM3CLfHrGhJPMR02M5osUxkwH1PpqcTF0EXPJvX+PtzTjSPcXWfaK6kgH3zNrRKQDdpzjI9A==
+  dependencies:
+    argsarray "0.0.1"
+    pouchdb-binary-utils "7.2.2"
+    pouchdb-errors "7.2.2"
+    pouchdb-fetch "7.2.2"
+    pouchdb-utils "7.2.2"
+
 pouchdb-adapter-idb@7.2.2:
   version "7.2.2"
   resolved "https://registry.yarnpkg.com/pouchdb-adapter-idb/-/pouchdb-adapter-idb-7.2.2.tgz#0a4b6c6f6639f93e2e50cb20d50b5fb6eaf1e80e"
@@ -8226,10 +8237,10 @@ runtypes@^4.0.0:
   resolved "https://registry.yarnpkg.com/runtypes/-/runtypes-4.2.0.tgz#6bb01a4683c1ac76015de8669df32a034c6cb0fe"
   integrity sha512-s89DYbxI7qKSpDMmdKQCGg61nH45tYA5LJMR0pWfJ/1nwPdpww75fusQqGzXE7llpk+rwe8fNPSx78FRGKenJg==
 
-rxdb@9.7.0:
-  version "9.7.0"
-  resolved "https://registry.yarnpkg.com/rxdb/-/rxdb-9.7.0.tgz#49b4c12ff07e0ad55020cc85779fc65d789c2c05"
-  integrity sha512-W1C/oqsmR+wA3r+dvl/f0QAeJDGun6wzD1q4EVpxAKvo16Gs+xLdClEQytitUaQoE4gms5h8V6qbzIu0zEVTkg==
+rxdb@9.7.1:
+  version "9.7.1"
+  resolved "https://registry.yarnpkg.com/rxdb/-/rxdb-9.7.1.tgz#b8e7fe821e221858ba2ec91cc6b38b92efb9a57f"
+  integrity sha512-nSf5pRihY0NwdBOZ38lzzCGBRTNOhBFvKEUJFM4JrMRnjD7qlVkgd5ezN//W+OeekxcSHIiCnfvMoSQxydEOUQ==
   dependencies:
     "@babel/runtime" "7.12.1"
     "@types/clone" "2.1.0"
@@ -8257,6 +8268,7 @@ rxdb@9.7.0:
     jsonschema-key-compression "1.2.0"
     modifyjs "0.3.1"
     object-path "0.11.5"
+    pouchdb-adapter-http "7.2.2"
     pouchdb-all-dbs "1.0.2"
     pouchdb-core "7.2.2"
     pouchdb-find "7.2.2"
