@@ -3087,10 +3087,10 @@ default-gateway@^4.2.0:
     execa "^1.0.0"
     ip-regex "^2.1.0"
 
-defekt@5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/defekt/-/defekt-5.2.0.tgz#8d3646fe9231a37c67d5dad134b54b659df812f4"
-  integrity sha512-ox40YFpl5LR5W6q99o3R3QVvvGfAcw7DXh/0wApoYMfREGerRd4XPqLY9T+Sh22YDH4V23WJopABOoz/MGzzsw==
+defekt@5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/defekt/-/defekt-5.2.1.tgz#b8f527dd0364af92150781b312a8c4936b43b969"
+  integrity sha512-THA6KY38ON4GMXTOYxQaKDNJ2HbfwU7rkxI7QSH3MG+yMxEcwW/VwhWkwSdqdFvklHYIATj0IA0kSfZq6UeMNA==
   dependencies:
     humanize-string "2.1.0"
 
@@ -4393,15 +4393,15 @@ get-caller-file@^2.0.1, get-caller-file@^2.0.5:
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
   integrity sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==
 
-get-graphql-from-jsonschema@6.0.2:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/get-graphql-from-jsonschema/-/get-graphql-from-jsonschema-6.0.2.tgz#a71561fbb96c7bc160cceb4ee53c6e6744db76be"
-  integrity sha512-9ExVlwSeU3ByiOAFg9z+WyPIZBkORMFtwN34eKgMPKLH3/wCn/nV7cROrKZtwR85+FX0wqcO94UZ9MTg36tdvQ==
+get-graphql-from-jsonschema@6.0.3:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/get-graphql-from-jsonschema/-/get-graphql-from-jsonschema-6.0.3.tgz#d993c1d516cf11bd56d18aef604e1b6ed37f8541"
+  integrity sha512-c0JP63lw+txPGnVHSLIeoLKlvzinjLOq4/n4Q1olXVR96qifbodGTrmlic0Oxn3e9MkJc05AfQSMyMonZwq4Bw==
   dependencies:
     "@types/common-tags" "1.8.0"
     "@types/json-schema" "7.0.6"
     common-tags "1.8.0"
-    defekt "5.2.0"
+    defekt "5.2.1"
 
 get-stream@^4.0.0, get-stream@^4.1.0:
   version "4.1.0"
@@ -8237,10 +8237,10 @@ runtypes@^4.0.0:
   resolved "https://registry.yarnpkg.com/runtypes/-/runtypes-4.2.0.tgz#6bb01a4683c1ac76015de8669df32a034c6cb0fe"
   integrity sha512-s89DYbxI7qKSpDMmdKQCGg61nH45tYA5LJMR0pWfJ/1nwPdpww75fusQqGzXE7llpk+rwe8fNPSx78FRGKenJg==
 
-rxdb@9.7.1:
-  version "9.7.1"
-  resolved "https://registry.yarnpkg.com/rxdb/-/rxdb-9.7.1.tgz#b8e7fe821e221858ba2ec91cc6b38b92efb9a57f"
-  integrity sha512-nSf5pRihY0NwdBOZ38lzzCGBRTNOhBFvKEUJFM4JrMRnjD7qlVkgd5ezN//W+OeekxcSHIiCnfvMoSQxydEOUQ==
+rxdb@9.8.0:
+  version "9.8.0"
+  resolved "https://registry.yarnpkg.com/rxdb/-/rxdb-9.8.0.tgz#bafd5416d61f2a1c3e47e446ff1bb7e333c596a6"
+  integrity sha512-J1prsCACIEcGGKuDhfGztyLuHrmdqShZLui8pkTiQ9a3wYWkNN+WbC8OgwGPvT1KLGGGZPK42kIvWxPLpnkOTA==
   dependencies:
     "@babel/runtime" "7.12.1"
     "@types/clone" "2.1.0"
@@ -8261,7 +8261,7 @@ rxdb@9.7.1:
     deep-equal "^2.0.1"
     event-reduce-js "1.1.0"
     express "4.17.1"
-    get-graphql-from-jsonschema "6.0.2"
+    get-graphql-from-jsonschema "6.0.3"
     graphql-client "2.0.1"
     is-electron "2.2.0"
     is-my-json-valid "2.20.5"
