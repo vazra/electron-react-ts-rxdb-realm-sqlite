@@ -871,10 +871,10 @@
     "@babel/plugin-transform-react-jsx-source" "^7.12.1"
     "@babel/plugin-transform-react-pure-annotations" "^7.12.1"
 
-"@babel/runtime@7.12.1", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7":
-  version "7.12.1"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.1.tgz#b4116a6b6711d010b2dad3b7b6e43bf1b9954740"
-  integrity sha512-J5AIf3vPj3UwXaAzb5j1xM4WAQDX3EMgemF8rjCP3SoW09LfRKAXQKt6CoVYl230P6iWdRcBbnLDDdnqWxZSCA==
+"@babel/runtime@7.12.5", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7":
+  version "7.12.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.5.tgz#410e7e487441e1b360c29be715d870d9b985882e"
+  integrity sha512-plcc+hbExy3McchJCEQG3knOsuh3HH+Prx1P6cLIkET/0dLuQDEnrT+s27Axgc9bqfsmNUNHfscgMUdBpC9xfg==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -3087,10 +3087,10 @@ default-gateway@^4.2.0:
     execa "^1.0.0"
     ip-regex "^2.1.0"
 
-defekt@5.2.1:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/defekt/-/defekt-5.2.1.tgz#b8f527dd0364af92150781b312a8c4936b43b969"
-  integrity sha512-THA6KY38ON4GMXTOYxQaKDNJ2HbfwU7rkxI7QSH3MG+yMxEcwW/VwhWkwSdqdFvklHYIATj0IA0kSfZq6UeMNA==
+defekt@5.2.2:
+  version "5.2.2"
+  resolved "https://registry.yarnpkg.com/defekt/-/defekt-5.2.2.tgz#7878d503f7621762f7e60ae6be745d314cdf9590"
+  integrity sha512-CKEF6SGztSvdV3DY2hq2YLsgEPMxO/JmKTaKeDZerREv+yXT5uErVcJpJ+CoRwW9d3N8U6Gaz2w+ReXaVDQw8Q==
   dependencies:
     humanize-string "2.1.0"
 
@@ -4393,15 +4393,15 @@ get-caller-file@^2.0.1, get-caller-file@^2.0.5:
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
   integrity sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==
 
-get-graphql-from-jsonschema@6.0.3:
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/get-graphql-from-jsonschema/-/get-graphql-from-jsonschema-6.0.3.tgz#d993c1d516cf11bd56d18aef604e1b6ed37f8541"
-  integrity sha512-c0JP63lw+txPGnVHSLIeoLKlvzinjLOq4/n4Q1olXVR96qifbodGTrmlic0Oxn3e9MkJc05AfQSMyMonZwq4Bw==
+get-graphql-from-jsonschema@6.0.5:
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/get-graphql-from-jsonschema/-/get-graphql-from-jsonschema-6.0.5.tgz#d40ac3c808613c20f521a2d175d023eba0902a8a"
+  integrity sha512-VacgCTHo8v/eQydG0n33emOOEY9s2g8CYoPDXVWU6KeWMtv5UvToj3Kjd0zsVsMfbo1ia/cxZF2j/wF0iDGOBg==
   dependencies:
     "@types/common-tags" "1.8.0"
     "@types/json-schema" "7.0.6"
     common-tags "1.8.0"
-    defekt "5.2.1"
+    defekt "5.2.2"
 
 get-stream@^4.0.0, get-stream@^4.1.0:
   version "4.1.0"
@@ -8237,12 +8237,12 @@ runtypes@^4.0.0:
   resolved "https://registry.yarnpkg.com/runtypes/-/runtypes-4.2.0.tgz#6bb01a4683c1ac76015de8669df32a034c6cb0fe"
   integrity sha512-s89DYbxI7qKSpDMmdKQCGg61nH45tYA5LJMR0pWfJ/1nwPdpww75fusQqGzXE7llpk+rwe8fNPSx78FRGKenJg==
 
-rxdb@9.8.0:
-  version "9.8.0"
-  resolved "https://registry.yarnpkg.com/rxdb/-/rxdb-9.8.0.tgz#bafd5416d61f2a1c3e47e446ff1bb7e333c596a6"
-  integrity sha512-J1prsCACIEcGGKuDhfGztyLuHrmdqShZLui8pkTiQ9a3wYWkNN+WbC8OgwGPvT1KLGGGZPK42kIvWxPLpnkOTA==
+rxdb@9.9.0:
+  version "9.9.0"
+  resolved "https://registry.yarnpkg.com/rxdb/-/rxdb-9.9.0.tgz#1a82540ff5b225f33a408a8617255d2575b00980"
+  integrity sha512-58XKBGvMFrJX4UVCAwBlqlxGUDayu92QdUdzRYdI0sW9cYzikFgphwj2txzmFN4r6ZDVA+y/3juikGfz5s/jWA==
   dependencies:
-    "@babel/runtime" "7.12.1"
+    "@babel/runtime" "7.12.5"
     "@types/clone" "2.1.0"
     "@types/cors" "2.8.8"
     "@types/deep-equal" "1.0.1"
@@ -8261,7 +8261,7 @@ rxdb@9.8.0:
     deep-equal "^2.0.1"
     event-reduce-js "1.1.0"
     express "4.17.1"
-    get-graphql-from-jsonschema "6.0.3"
+    get-graphql-from-jsonschema "6.0.5"
     graphql-client "2.0.1"
     is-electron "2.2.0"
     is-my-json-valid "2.20.5"
