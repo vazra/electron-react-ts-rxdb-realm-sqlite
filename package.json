@@ -30,7 +30,7 @@
     "react-dom": "16.14.0",
     "react-hot-loader": "^4.13.0",
     "realm": "^10.0.1",
-    "rxdb": "9.8.0",
+    "rxdb": "9.9.0",
     "rxjs": "6.6.3",
     "source-map-support": "^0.5.19",
     "sql.js": "^1.4.0",
