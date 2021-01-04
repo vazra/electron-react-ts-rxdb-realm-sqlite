@@ -1065,12 +1065,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/cors@2.8.8":
-  version "2.8.8"
-  resolved "https://registry.yarnpkg.com/@types/cors/-/cors-2.8.8.tgz#317a8d8561995c60e35b9e0fcaa8d36660c98092"
-  integrity sha512-fO3gf3DxU2Trcbr75O7obVndW/X5k8rJNZkLXlQWStTHhP71PkRqjwPIEI0yMnJdg9R9OasjU+Bsr+Hr1xy/0w==
-  dependencies:
-    "@types/express" "*"
+"@types/cors@2.8.9":
+  version "2.8.9"
+  resolved "https://registry.yarnpkg.com/@types/cors/-/cors-2.8.9.tgz#4bd1fcac72eca8d5bec93e76c7fdcbdc1bc2cd4a"
+  integrity sha512-zurD1ibz21BRlAOIKP8yhrxlqKx6L9VCwkB5kMiP6nZAhoF5MvC7qS1qPA7nRcr1GJolfkQC7/EAL4hdYejLtg==
 
 "@types/debug@*", "@types/debug@^4.1.5":
   version "4.1.5"
@@ -1096,7 +1094,7 @@
     "@types/qs" "*"
     "@types/range-parser" "*"
 
-"@types/express@*", "@types/express@4.17.9":
+"@types/express@4.17.9":
   version "4.17.9"
   resolved "https://registry.yarnpkg.com/@types/express/-/express-4.17.9.tgz#f5f2df6add703ff28428add52bdec8a1091b0a78"
   integrity sha512-SDzEIZInC4sivGIFY4Sz1GG6J9UObPwCInYJjko2jzOf/Imx/dlpume6Xxwj1ORL82tBbmN4cPDIDkLbWHk9hw==
@@ -8261,14 +8259,14 @@ runtypes@^4.0.0:
   resolved "https://registry.yarnpkg.com/runtypes/-/runtypes-4.2.0.tgz#6bb01a4683c1ac76015de8669df32a034c6cb0fe"
   integrity sha512-s89DYbxI7qKSpDMmdKQCGg61nH45tYA5LJMR0pWfJ/1nwPdpww75fusQqGzXE7llpk+rwe8fNPSx78FRGKenJg==
 
-rxdb@9.11.0:
-  version "9.11.0"
-  resolved "https://registry.yarnpkg.com/rxdb/-/rxdb-9.11.0.tgz#9f613ba723343fe6ded0011b3b31577d2833614e"
-  integrity sha512-U78z2M9ez7pFCKDY3Efu23LfLU+tYeOAUZcPKziox5INH3esNnvn53boO5unK/d3Dn5TEWZI3nm6lCPtMgQu/Q==
+rxdb@9.12.0:
+  version "9.12.0"
+  resolved "https://registry.yarnpkg.com/rxdb/-/rxdb-9.12.0.tgz#3835a2a753ac3e8c251e1c58046bebe4accb775e"
+  integrity sha512-BWHGSURFHoKTl71/zBejpHFs1IgcBQIyvsTdi5njfM3TM9V6c9De7dLFtyn/+8Okj7YEsP0jZfvU6OwGdxK/Tw==
   dependencies:
     "@babel/runtime" "7.12.5"
     "@types/clone" "2.1.0"
-    "@types/cors" "2.8.8"
+    "@types/cors" "2.8.9"
     "@types/deep-equal" "1.0.1"
     "@types/express" "4.17.9"
     "@types/is-my-json-valid" "0.0.20"
