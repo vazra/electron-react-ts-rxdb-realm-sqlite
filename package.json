@@ -34,7 +34,7 @@
     "rxjs": "6.6.3",
     "source-map-support": "^0.5.19",
     "sql.js": "^1.4.0",
-    "sqlite3": "^5.0.0",
+    "sqlite3": "^5.0.1",
     "trilogy": "^2.0.3"
   },
   "devDependencies": {
