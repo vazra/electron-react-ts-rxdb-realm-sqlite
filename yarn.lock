@@ -2222,10 +2222,10 @@ browserslist@^4.12.0, browserslist@^4.8.5:
     node-releases "^1.1.53"
     pkg-up "^2.0.0"
 
-bson@^4.0.3:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/bson/-/bson-4.2.0.tgz#15b5beffed6e44883de9922a2e1896fba4042cd4"
-  integrity sha512-c3MlJqdROnCRvDr/+MLfaDvQ7CvGI4p1hKX45/fvgzSwKRdOjsfRug1NJJ8ty5mXCNtUdjJEWzoZWcBQxV4TyA==
+bson@^4.2.0:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/bson/-/bson-4.2.2.tgz#ac01bb32b8ab30839550b98e0f44fced931df75d"
+  integrity sha512-9fX257PVHAUpiRGmY3356RVWKQxLA73BgjA/x5MGuJkTEMeG7yzjuBrsiFB67EXRJnFVKrbJY9t/M+oElKYktQ==
   dependencies:
     buffer "^5.6.0"
 
@@ -6394,15 +6394,10 @@ no-case@^3.0.3:
     lower-case "^2.0.1"
     tslib "^1.10.0"
 
-node-addon-api@^3.0.0:
+node-addon-api@^3.0.0, node-addon-api@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/node-addon-api/-/node-addon-api-3.1.0.tgz#98b21931557466c6729e51cb77cd39c965f42239"
   integrity sha512-flmrDNB06LIl5lywUz7YlNGZH/5p0M7W28k8hzd9Lshtdh1wshD2Y+U4h9LD6KObOy1f+fEVdgprPrEymjM5uw==
-
-"node-addon-api@https://github.com/realm/node-addon-api/tarball/realm":
-  version "3.0.2"
-  uid "740d1d3002bf24745c80f65914a85a4519e7082c"
-  resolved "https://github.com/realm/node-addon-api/tarball/realm#740d1d3002bf24745c80f65914a85a4519e7082c"
 
 node-fetch@2.6.0:
   version "2.6.0"
@@ -7961,19 +7956,19 @@ realm-network-transport@^0.7.0:
     abort-controller "^3.0.0"
     node-fetch "^2.6.0"
 
-realm@^10.1.2:
-  version "10.1.2"
-  resolved "https://registry.yarnpkg.com/realm/-/realm-10.1.2.tgz#2804aed45836acc93e87995af228284fe6357d2a"
-  integrity sha512-cDn18QcNIeXsIB0EQInZ+UJDS75v0nJf+JSEcZxyEzIRsjWwJ6NB/LLh3Rfk44e6DE1UUxEdWcUWRm/v/KgKHw==
+realm@^10.1.3:
+  version "10.1.3"
+  resolved "https://registry.yarnpkg.com/realm/-/realm-10.1.3.tgz#8da16504710aedb7c4af34f22359a7db6cae6ac8"
+  integrity sha512-NwzLnOtCgbA2e+3v0JJThhJrB4FYvyF5uUG5XTF3r3LQCQH4L3P+PDjQ4Uh8GlyHD16HShBnj6E9mdNqcrgAeQ==
   dependencies:
-    bson "^4.0.3"
+    bson "^4.2.0"
     command-line-args "^4.0.6"
     deepmerge "2.1.0"
     deprecated-react-native-listview "0.0.6"
     fs-extra "^4.0.3"
     https-proxy-agent "^2.2.4"
     ini "^1.3.7"
-    node-addon-api "https://github.com/realm/node-addon-api/tarball/realm"
+    node-addon-api "^3.1.0"
     node-fetch "^2.6.1"
     node-machine-id "^1.1.10"
     node-pre-gyp "^0.15.0"
