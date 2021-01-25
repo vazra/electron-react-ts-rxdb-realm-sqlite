@@ -1094,13 +1094,22 @@
     "@types/qs" "*"
     "@types/range-parser" "*"
 
-"@types/express@4.17.9":
-  version "4.17.9"
-  resolved "https://registry.yarnpkg.com/@types/express/-/express-4.17.9.tgz#f5f2df6add703ff28428add52bdec8a1091b0a78"
-  integrity sha512-SDzEIZInC4sivGIFY4Sz1GG6J9UObPwCInYJjko2jzOf/Imx/dlpume6Xxwj1ORL82tBbmN4cPDIDkLbWHk9hw==
+"@types/express-serve-static-core@^4.17.18":
+  version "4.17.18"
+  resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.17.18.tgz#8371e260f40e0e1ca0c116a9afcd9426fa094c40"
+  integrity sha512-m4JTwx5RUBNZvky/JJ8swEJPKFd8si08pPF2PfizYjGZOKr/svUWPcoUmLow6MmPzhasphB7gSTINY67xn3JNA==
+  dependencies:
+    "@types/node" "*"
+    "@types/qs" "*"
+    "@types/range-parser" "*"
+
+"@types/express@4.17.11":
+  version "4.17.11"
+  resolved "https://registry.yarnpkg.com/@types/express/-/express-4.17.11.tgz#debe3caa6f8e5fcda96b47bd54e2f40c4ee59545"
+  integrity sha512-no+R6rW60JEc59977wIxreQVsIEOAYwgCqldrA/vkpCnbD7MqTefO97lmoBe4WE0F156bC4uLSP1XHDOySnChg==
   dependencies:
     "@types/body-parser" "*"
-    "@types/express-serve-static-core" "*"
+    "@types/express-serve-static-core" "^4.17.18"
     "@types/qs" "*"
     "@types/serve-static" "*"
 
@@ -2133,10 +2142,10 @@ braces@^3.0.1, braces@~3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
-broadcast-channel@3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/broadcast-channel/-/broadcast-channel-3.3.0.tgz#5541bbec6b4e9ee03f4c5462a52b0bc5ecd0690c"
-  integrity sha512-mi0xKJxdHHMb/PqIGLybPlAHMqs/ShxXSylaVYVM20ViizXEbjaXAy9Q6YalUGX5FoAls0UBNaT8mX8LR259bA==
+broadcast-channel@3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/broadcast-channel/-/broadcast-channel-3.4.1.tgz#65b63068d0a5216026a19905c9b2d5e9adf0928a"
+  integrity sha512-VXYivSkuBeQY+pL5hNQQNvBdKKQINBAROm4G8lAbWQfOZ7Yn4TMcgLNlJyEqlkxy5G8JJBsI3VJ1u8FUTOROcg==
   dependencies:
     "@babel/runtime" "^7.7.2"
     detect-node "^2.0.4"
@@ -8254,23 +8263,23 @@ runtypes@^4.0.0:
   resolved "https://registry.yarnpkg.com/runtypes/-/runtypes-4.2.0.tgz#6bb01a4683c1ac76015de8669df32a034c6cb0fe"
   integrity sha512-s89DYbxI7qKSpDMmdKQCGg61nH45tYA5LJMR0pWfJ/1nwPdpww75fusQqGzXE7llpk+rwe8fNPSx78FRGKenJg==
 
-rxdb@9.12.0:
-  version "9.12.0"
-  resolved "https://registry.yarnpkg.com/rxdb/-/rxdb-9.12.0.tgz#3835a2a753ac3e8c251e1c58046bebe4accb775e"
-  integrity sha512-BWHGSURFHoKTl71/zBejpHFs1IgcBQIyvsTdi5njfM3TM9V6c9De7dLFtyn/+8Okj7YEsP0jZfvU6OwGdxK/Tw==
+rxdb@9.12.1:
+  version "9.12.1"
+  resolved "https://registry.yarnpkg.com/rxdb/-/rxdb-9.12.1.tgz#8e3f0e0965a03dfda6274a4a04cb7e072ed6a497"
+  integrity sha512-FOAUF3jvMy6rUc6jVx+025Upx9Qc8gNxq3aPFe/v3ZlVVlu3j0gYG+yFW1ph8R8n8UxnuxadXtsvdyWAkXdZXw==
   dependencies:
     "@babel/runtime" "7.12.5"
     "@types/clone" "2.1.0"
     "@types/cors" "2.8.9"
     "@types/deep-equal" "1.0.1"
-    "@types/express" "4.17.9"
+    "@types/express" "4.17.11"
     "@types/is-my-json-valid" "0.0.20"
     "@types/object-path" "0.11.0"
     "@types/pouchdb-core" "7.0.6"
     "@types/pouchdb-find" "6.3.6"
     "@types/pouchdb-replication" "6.4.2"
     "@types/spark-md5" "3.0.2"
-    broadcast-channel "3.3.0"
+    broadcast-channel "3.4.1"
     clone "^2.1.2"
     cors "2.8.5"
     crypto-js "3.3.0"
