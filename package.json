@@ -38,7 +38,7 @@
     "trilogy": "^2.0.3"
   },
   "devDependencies": {
-    "@babel/preset-react": "^7.12.10",
+    "@babel/preset-react": "^7.12.13",
     "@types/electron-devtools-installer": "^2.2.0",
     "@types/faker": "5.1.5",
     "@types/generic-pool": "^3.1.9",
