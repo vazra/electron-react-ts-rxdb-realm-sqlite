@@ -9243,10 +9243,10 @@ tough-cookie@~2.5.0:
     psl "^1.1.28"
     punycode "^2.1.1"
 
-trilogy@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/trilogy/-/trilogy-2.0.3.tgz#c8c43ddd645d3c12721397261983c7439eb20579"
-  integrity sha512-t/nSVL5LEgj8oukZxhnxHe8V31F2rjhBjQF81uPnDiBMijEpiPI4ZPZ8Rplle31s9VJPxIiVW5Y12NM4ns8eUQ==
+trilogy@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/trilogy/-/trilogy-2.0.5.tgz#dac9349e790e26f4e1d40c6bc7b56aa4df1e5927"
+  integrity sha512-m989CZQ6wqwD36/1nC+N99/vlCxDVcM8iYxOVQAQT5aTVbFweyx46U2Ct44JFoMmg8l7MAIWQF5jyfgvUV5Udw==
   dependencies:
     generic-pool "^3.7.1"
     knex "^0.20.1"

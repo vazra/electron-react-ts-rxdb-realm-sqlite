@@ -35,7 +35,7 @@
     "source-map-support": "^0.5.19",
     "sql.js": "^1.4.0",
     "sqlite3": "^5.0.1",
-    "trilogy": "^2.0.3"
+    "trilogy": "^2.0.5"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.14.5",
