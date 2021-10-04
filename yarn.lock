@@ -1227,10 +1227,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-bootstrap-table2-paginator@2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@types/react-bootstrap-table2-paginator/-/react-bootstrap-table2-paginator-2.1.1.tgz#43e625c3b11f06403b23eeb6b5d7661a4bc52623"
-  integrity sha512-Ho0lwDKguwHEme97oHgVQRI8t//4JfCRqnIzlLPuM+aU5LfGI8niXxuBmUPyXqdSXitZ1C9ANQAMGqqBmuW0NQ==
+"@types/react-bootstrap-table2-paginator@2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@types/react-bootstrap-table2-paginator/-/react-bootstrap-table2-paginator-2.1.2.tgz#bf40a045579c6b7ffce8a5b1120d892feb50c362"
+  integrity sha512-qAeUhtQ+wXKUC72emRBh1CQw+usGE/sXa1Xp0nEby7xZotpoJJ3iL3yAstRvYGn7TKlKuSTRRNtDEd6zP+XuqA==
   dependencies:
     "@types/react-bootstrap-table-next" "*"
 
