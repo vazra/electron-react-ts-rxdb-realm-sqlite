@@ -1071,10 +1071,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/generic-pool@^3.1.9":
-  version "3.1.9"
-  resolved "https://registry.yarnpkg.com/@types/generic-pool/-/generic-pool-3.1.9.tgz#cc82ee0d92561fce713f8f9a7b2380eda8a89dcb"
-  integrity sha512-IkXMs8fhV6+E4J8EWv8iL7mLvApcLLQUH4m1Rex3KCPRqT+Xya0DDHIeGAokk/6VXe9zg8oTWyr+FGyeuimEYQ==
+"@types/generic-pool@^3.1.10":
+  version "3.1.10"
+  resolved "https://registry.yarnpkg.com/@types/generic-pool/-/generic-pool-3.1.10.tgz#ed21e0ec798bc5f77bb324e1a5c5c9bf335c1d9e"
+  integrity sha512-WRT/9taXh9XJRA9yvrbC02IqGZhK9GbFE/vuP2LeSLrqmDzz5wdXsH0Ige/F+3+rbbZfwH3LEazDsU0JiSV3vA==
   dependencies:
     "@types/node" "*"
 
