@@ -32,7 +32,7 @@
     "realm": "^10.8.0",
     "rxdb": "9.15.0",
     "rxjs": "6.6.3",
-    "source-map-support": "^0.5.19",
+    "source-map-support": "^0.5.20",
     "sql.js": "^1.6.2",
     "sqlite3": "^5.0.2",
     "trilogy": "^2.0.5"
