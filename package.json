@@ -33,7 +33,7 @@
     "rxdb": "9.12.1",
     "rxjs": "6.6.3",
     "source-map-support": "^0.5.19",
-    "sql.js": "^1.4.0",
+    "sql.js": "^1.6.2",
     "sqlite3": "^5.0.1",
     "trilogy": "^2.0.5"
   },
