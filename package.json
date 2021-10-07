@@ -31,7 +31,7 @@
     "react-hot-loader": "^4.13.0",
     "realm": "^10.8.0",
     "rxdb": "10.1.0",
-    "rxjs": "7.3.1",
+    "rxjs": "7.4.0",
     "source-map-support": "^0.5.20",
     "sql.js": "^1.6.2",
     "sqlite3": "^5.0.2",
