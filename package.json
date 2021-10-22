@@ -42,7 +42,7 @@
     "@types/electron-devtools-installer": "^2.2.0",
     "@types/faker": "5.5.9",
     "@types/generic-pool": "^3.1.10",
-    "@types/node": "^16.11.1",
+    "@types/node": "^16.11.2",
     "@types/react": "^17.0.31",
     "@types/react-bootstrap-table-next": "4.0.16",
     "@types/react-bootstrap-table2-paginator": "2.1.2",
