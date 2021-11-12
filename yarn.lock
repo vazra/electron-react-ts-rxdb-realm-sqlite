@@ -3989,10 +3989,10 @@ etag@~1.8.1:
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
 
-event-reduce-js@1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/event-reduce-js/-/event-reduce-js-1.4.1.tgz#ba56c8fb624ad509eb29dfad36aad199db489857"
-  integrity sha512-hrbiEZ6IqsdaHvX3VblrQTYjF6+JG83zQKndItaNRMypurxxrSCxLvgCyOG+8tV1LkJ6lrBZS4U1bQvd33mAjg==
+event-reduce-js@2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/event-reduce-js/-/event-reduce-js-2.0.2.tgz#5e82c61de426d0e54f24ddbc2d44ff48d6a002df"
+  integrity sha512-+5RTq+7N21nk49kJyZvTN72HlJs4hxw6DxZkmaOolIL9G7TplfeTIcfE55kgklPLBaWhySfht+z8O+E9EpRJ5w==
   dependencies:
     array-push-at-sort-position "1.2.0"
     binary-decision-diagram "1.4.0"
@@ -8496,10 +8496,10 @@ runtypes@^4.0.0:
   resolved "https://registry.yarnpkg.com/runtypes/-/runtypes-4.2.0.tgz#6bb01a4683c1ac76015de8669df32a034c6cb0fe"
   integrity sha512-s89DYbxI7qKSpDMmdKQCGg61nH45tYA5LJMR0pWfJ/1nwPdpww75fusQqGzXE7llpk+rwe8fNPSx78FRGKenJg==
 
-rxdb@10.3.5:
-  version "10.3.5"
-  resolved "https://registry.yarnpkg.com/rxdb/-/rxdb-10.3.5.tgz#f8c45218866eb8dc13ff7d505d7aa7b7e5def054"
-  integrity sha512-FwVl3CpclbPuwqaImANe5s9uGp4zNut4Ryq1BQjieDENbxL6hBQeje2y8vvdIxw0f/Y9XnLc3nwNDjpb5xhC/Q==
+rxdb@10.4.0:
+  version "10.4.0"
+  resolved "https://registry.yarnpkg.com/rxdb/-/rxdb-10.4.0.tgz#1a5f229daa2606616c05ec47d9728b6ffad61ad9"
+  integrity sha512-vX24LaiVZwTkmmcy1jNm7aR2/S34rhht37rNNlCjd2OLg5Ajz7CTPCAIwfmEYJ+rmmmyxISw6NC8HlHD27uGgQ==
   dependencies:
     "@babel/runtime" "7.15.4"
     "@types/clone" "2.1.1"
@@ -8518,7 +8518,7 @@ rxdb@10.3.5:
     custom-idle-queue "3.0.1"
     deep-equal "2.0.5"
     deep-freeze "0.0.1"
-    event-reduce-js "1.4.1"
+    event-reduce-js "2.0.2"
     express "4.17.1"
     get-graphql-from-jsonschema "8.0.16"
     graphql-client "2.0.1"
