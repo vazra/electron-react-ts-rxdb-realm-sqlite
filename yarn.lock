@@ -8044,10 +8044,10 @@ realm-network-transport@^0.7.0:
     abort-controller "^3.0.0"
     node-fetch "^2.6.0"
 
-realm@^10.10.0:
-  version "10.10.0"
-  resolved "https://registry.yarnpkg.com/realm/-/realm-10.10.0.tgz#08e1554750c341e4437103ec29233e26aa3be892"
-  integrity sha512-iuHo7xAy9E/+Ha8WOZBLMWisNCeYI6Unk31m0Zs5rb0dPlTaNNyb9rt76hA/YZNb3HQfJAjy8bvaavoExykABw==
+realm@^10.10.1:
+  version "10.10.1"
+  resolved "https://registry.yarnpkg.com/realm/-/realm-10.10.1.tgz#87c13b66328db0aead39a86d0fb38043b8d13c75"
+  integrity sha512-QODV1YybfRtfp0Df2JeW0yrxw2ZMMTb5MAU8SbEh8aKboGDYkSplp6C2qizTADwHgrj72RVzt7eG87DUe97/GA==
   dependencies:
     "@realm.io/common" "^0.1.1"
     bindings "^1.5.0"
