@@ -1821,6 +1821,11 @@ array-unique@^0.3.2:
   resolved "https://registry.yarnpkg.com/array-unique/-/array-unique-0.3.2.tgz#a894b75d4bc4f6cd679ef3244a9fd8f46ae2d428"
   integrity sha1-qJS3XUvE9s1nnvMkSp/Y9Gri1Cg=
 
+as-typed@1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/as-typed/-/as-typed-1.3.2.tgz#65ec38eb651ea6d62646e00dd336c2fd8076e7a6"
+  integrity sha512-94ezeKlKB97OJUyMaU7dQUAB+Cmjlgr4T9/cxCoKaLM4F2HAmuIHm3Q5ClGCsX5PvRwCQehCzAa/6foRFXRbqA==
+
 asap@~2.0.3:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
@@ -7896,10 +7901,10 @@ runtypes@^4.0.0:
   resolved "https://registry.yarnpkg.com/runtypes/-/runtypes-4.2.0.tgz#6bb01a4683c1ac76015de8669df32a034c6cb0fe"
   integrity sha512-s89DYbxI7qKSpDMmdKQCGg61nH45tYA5LJMR0pWfJ/1nwPdpww75fusQqGzXE7llpk+rwe8fNPSx78FRGKenJg==
 
-rxdb@11.0.0:
-  version "11.0.0"
-  resolved "https://registry.yarnpkg.com/rxdb/-/rxdb-11.0.0.tgz#2f328afd8bf4522f1d3615751110d65424a300fb"
-  integrity sha512-21fW+X1wzOvzO6+eGzBJuNefaLVSaSjPqTjPMaNOYL631ptIhVztn4/X7b+kGZS1txBepzbDH0AeJq6KnTha+Q==
+rxdb@11.1.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/rxdb/-/rxdb-11.1.0.tgz#06a0189510541754545478329c5771754d19991e"
+  integrity sha512-2Ljp0PYFHQkfWDe0X9vzk9S6eop6z62EtKBjx+CU7T+/y5CeP6QCTJlDUzqFo4BhswjE/W6hQNcfncGByyaOpw==
   dependencies:
     "@babel/runtime" "7.16.7"
     "@types/clone" "2.1.1"
@@ -7910,6 +7915,7 @@ rxdb@11.0.0:
     "@types/object-path" "0.11.1"
     "@types/pouchdb-core" "7.0.9"
     "@types/spark-md5" "3.0.2"
+    as-typed "1.3.2"
     babel-plugin-transform-async-to-promises "0.8.18"
     broadcast-channel "4.9.0"
     clone "^2.1.2"
