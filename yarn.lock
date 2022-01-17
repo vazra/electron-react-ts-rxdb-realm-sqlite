@@ -7901,10 +7901,10 @@ runtypes@^4.0.0:
   resolved "https://registry.yarnpkg.com/runtypes/-/runtypes-4.2.0.tgz#6bb01a4683c1ac76015de8669df32a034c6cb0fe"
   integrity sha512-s89DYbxI7qKSpDMmdKQCGg61nH45tYA5LJMR0pWfJ/1nwPdpww75fusQqGzXE7llpk+rwe8fNPSx78FRGKenJg==
 
-rxdb@11.2.0:
-  version "11.2.0"
-  resolved "https://registry.yarnpkg.com/rxdb/-/rxdb-11.2.0.tgz#52974ffb7d8aaadc1471078d80204c282a72354c"
-  integrity sha512-4zZFe8hY7RFksMwU4FK304kjiODQgl7vplGw+GCgFoLh9RcDmLnopT+3MLkDA3iZOQmICMPKvGnX+OzVBzv0NQ==
+rxdb@11.3.0:
+  version "11.3.0"
+  resolved "https://registry.yarnpkg.com/rxdb/-/rxdb-11.3.0.tgz#96fd2b78457482e7407eec940f7fec901a35ef3b"
+  integrity sha512-bF14EYUCJHbBQGpH6ZoT/EqdiigtmRxdVrQTUhkw+S2qpJoxutU57JoutKbh9aW9CPlDe3s/Rkue7F+zfZuL4w==
   dependencies:
     "@babel/runtime" "7.16.7"
     "@types/clone" "2.1.1"
