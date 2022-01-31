@@ -1225,10 +1225,10 @@
     "@types/node" "*"
     xmlbuilder ">=11.0.1"
 
-"@types/pouchdb-core@*", "@types/pouchdb-core@7.0.9":
-  version "7.0.9"
-  resolved "https://registry.yarnpkg.com/@types/pouchdb-core/-/pouchdb-core-7.0.9.tgz#9fecde62e54562c054abf8a4f72cbc0f9ac1e8ae"
-  integrity sha512-zzO8wkTztn1wT//mxIpcxSuKWlrHbVeERnPKVNEi9mbuqyLqevH+kRaGCJaEjwLp/tVjwnM/e6ZJoFsdP90pQg==
+"@types/pouchdb-core@*", "@types/pouchdb-core@7.0.10":
+  version "7.0.10"
+  resolved "https://registry.yarnpkg.com/@types/pouchdb-core/-/pouchdb-core-7.0.10.tgz#d1ea1549e7fad6cb579f71459b1bc27252e06a5a"
+  integrity sha512-mKhjLlWWXyV3PTTjDhzDV1kc2dolO7VYFa75IoKM/hr8Er9eo8RIbS7mJLfC8r/C3p6ihZu9yZs1PWC1LQ0SOA==
   dependencies:
     "@types/debug" "*"
     "@types/pouchdb-find" "*"
@@ -3120,6 +3120,11 @@ detective@^4.3.1:
   dependencies:
     acorn "^5.2.1"
     defined "^1.0.0"
+
+dexie@4.0.0-alpha.1:
+  version "4.0.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/dexie/-/dexie-4.0.0-alpha.1.tgz#76c0a7bc20cf0c6fd2634c046c36d9c77dfaf4bf"
+  integrity sha512-/Ft0iWYFNL/U7tRWXLXKVoeMwvegNKIcXdi0Cbd9MYIan+56GY9wVHy9dDFBzxkZrsuKs48j7jEYE4T+T3PGjQ==
 
 dir-compare@^2.4.0:
   version "2.4.0"
@@ -5910,6 +5915,11 @@ min-document@^2.19.0:
   dependencies:
     dom-walk "^0.1.0"
 
+mingo@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/mingo/-/mingo-5.0.0.tgz#c75bc2c77bcd5544de0e3fc51064c5ff0816aa4c"
+  integrity sha512-JTw+s3nO2nebKJRt5rkGs2MLzs+UIL7pqD2fZDHyXPo5IFOs0ANTd6Bqo48/s4lZzQvB554pJ8ti+PG56fK3dQ==
+
 mini-css-extract-plugin@^0.9.0:
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-0.9.0.tgz#47f2cf07aa165ab35733b1fc97d4c46c0564339e"
@@ -7836,10 +7846,10 @@ runtypes@^4.0.0:
   resolved "https://registry.yarnpkg.com/runtypes/-/runtypes-4.2.0.tgz#6bb01a4683c1ac76015de8669df32a034c6cb0fe"
   integrity sha512-s89DYbxI7qKSpDMmdKQCGg61nH45tYA5LJMR0pWfJ/1nwPdpww75fusQqGzXE7llpk+rwe8fNPSx78FRGKenJg==
 
-rxdb@11.3.0:
-  version "11.3.0"
-  resolved "https://registry.yarnpkg.com/rxdb/-/rxdb-11.3.0.tgz#96fd2b78457482e7407eec940f7fec901a35ef3b"
-  integrity sha512-bF14EYUCJHbBQGpH6ZoT/EqdiigtmRxdVrQTUhkw+S2qpJoxutU57JoutKbh9aW9CPlDe3s/Rkue7F+zfZuL4w==
+rxdb@11.5.1:
+  version "11.5.1"
+  resolved "https://registry.yarnpkg.com/rxdb/-/rxdb-11.5.1.tgz#bee0bc3652baef4e25769484e5c15c72ba5e3e63"
+  integrity sha512-CBe4FMh042lpfeh/1RJrHBL+QYck4vpaxF0d54kdrSe/4hs6Q/5eNTTQFpksW+c4zeeDcuXK7h72jrX+ln+Ubw==
   dependencies:
     "@babel/runtime" "7.16.7"
     "@types/clone" "2.1.1"
@@ -7848,7 +7858,7 @@ rxdb@11.3.0:
     "@types/is-my-json-valid" "2.18.0"
     "@types/lokijs" "1.5.7"
     "@types/object-path" "0.11.1"
-    "@types/pouchdb-core" "7.0.9"
+    "@types/pouchdb-core" "7.0.10"
     "@types/spark-md5" "3.0.2"
     as-typed "1.3.2"
     babel-plugin-transform-async-to-promises "0.8.18"
@@ -7858,6 +7868,7 @@ rxdb@11.3.0:
     crypto-js "4.1.1"
     custom-idle-queue "3.0.1"
     deep-freeze "0.0.1"
+    dexie "4.0.0-alpha.1"
     event-reduce-js "2.0.3"
     express "4.17.2"
     fast-deep-equal "3.1.3"
@@ -7867,6 +7878,7 @@ rxdb@11.3.0:
     is-my-json-valid "2.20.6"
     jsonschema-key-compression "1.6.1"
     lokijs "1.5.12"
+    mingo "5.0.0"
     modifyjs "0.3.1"
     object-path "0.11.8"
     oblivious-set "1.0.0"
