@@ -29,7 +29,7 @@
     "react-bootstrap-table2-paginator": "2.1.2",
     "react-dom": "16.14.0",
     "react-hot-loader": "^4.13.0",
-    "realm": "^10.12.0",
+    "realm": "^10.13.0",
     "rxdb": "11.6.0",
     "rxjs": "7.5.4",
     "source-map-support": "^0.5.21",
