@@ -24,7 +24,7 @@
     "pouchdb-adapter-node-websql": "^7.0.0",
     "pouchdb-adapter-websql": "7.0.0",
     "react": "17.0.2",
-    "react-bootstrap": "2.2.0",
+    "react-bootstrap": "2.2.1",
     "react-bootstrap-table-next": "4.0.3",
     "react-bootstrap-table2-paginator": "2.1.2",
     "react-dom": "16.14.0",
