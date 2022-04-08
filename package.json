@@ -46,7 +46,7 @@
     "@types/react": "^17.0.43",
     "@types/react-bootstrap-table-next": "4.0.17",
     "@types/react-bootstrap-table2-paginator": "2.1.2",
-    "@types/react-dom": "^17.0.14",
+    "@types/react-dom": "^18.0.0",
     "electron": "18.0.3",
     "electron-builder": "^22.14.13",
     "electron-webpack": "^2.8.2",
