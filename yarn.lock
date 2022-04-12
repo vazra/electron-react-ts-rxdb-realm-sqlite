@@ -7585,18 +7585,18 @@ readdirp@^2.2.1:
     micromatch "^3.1.10"
     readable-stream "^2.0.2"
 
-realm-network-transport@^0.7.1:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/realm-network-transport/-/realm-network-transport-0.7.1.tgz#64d29d3ba7c18861940c0598a7e88a57725bd4ca"
-  integrity sha512-ZKGJVk6hzVeLE/cme9H4MyVnfpPlCTMheQdnMHWkLMhvNUqgyPFkgSCB+B5IsnGns2l5g2rmKeTNPoUFHi+Khw==
+realm-network-transport@^0.7.2:
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/realm-network-transport/-/realm-network-transport-0.7.2.tgz#382b965bf97a4132e0f8770f864d4a20d976be35"
+  integrity sha512-/5/YtZ5+ZIHIPgVFL6fRyx0/FRhmMaaF7L/h+iU8VKWGzesiBusSaeInosrM6v8MQvsW3W9ApBCeUwNW6m+8sg==
   dependencies:
     abort-controller "^3.0.0"
     node-fetch "^2.6.0"
 
-realm@^10.14.0:
-  version "10.14.0"
-  resolved "https://registry.yarnpkg.com/realm/-/realm-10.14.0.tgz#7bf046fe3a8f1760ef96b7f4f9edf840193117bf"
-  integrity sha512-KcXw6V1b3DgPWTbOlNZfBtNY6MQGpFJBeMdZBjItsJnc2ZlNjXc6NG3O5oAH9KnRcs7LzMwvGVebZkOKSqvjgA==
+realm@^10.16.0:
+  version "10.16.0"
+  resolved "https://registry.yarnpkg.com/realm/-/realm-10.16.0.tgz#1d33d6513e7a84e699a25095421440d83161b73c"
+  integrity sha512-6kS7JKs0xrFmimmiPxOhi/QGyXQg91K3I+eXIVNQYdmrcmAY5na6S1f1/MVAwd+NzA0ALl3mgGr5uCPvpiWasA==
   dependencies:
     "@realm.io/common" "^0.1.1"
     bindings "^1.5.0"
@@ -7613,7 +7613,7 @@ realm@^10.14.0:
     prebuild-install "^7.0.1"
     progress "^2.0.3"
     prop-types "^15.6.2"
-    realm-network-transport "^0.7.1"
+    realm-network-transport "^0.7.2"
     request "^2.88.0"
     stream-counter "^1.0.0"
     sync-request "^3.0.1"
