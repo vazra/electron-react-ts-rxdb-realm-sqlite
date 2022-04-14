@@ -43,7 +43,7 @@
     "@types/faker": "6.6.9",
     "@types/generic-pool": "^3.1.10",
     "@types/node": "^17.0.23",
-    "@types/react": "^18.0.3",
+    "@types/react": "^18.0.4",
     "@types/react-bootstrap-table-next": "4.0.17",
     "@types/react-bootstrap-table2-paginator": "2.1.2",
     "@types/react-dom": "^18.0.0",
