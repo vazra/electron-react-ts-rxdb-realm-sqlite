@@ -20,7 +20,7 @@
     "faker": "6.6.6",
     "pouchdb-adapter-idb": "7.2.2",
     "pouchdb-adapter-leveldb": "^7.3.0",
-    "pouchdb-adapter-memory": "7.2.2",
+    "pouchdb-adapter-memory": "7.3.0",
     "pouchdb-adapter-node-websql": "^7.0.0",
     "pouchdb-adapter-websql": "7.0.0",
     "react": "17.0.2",
