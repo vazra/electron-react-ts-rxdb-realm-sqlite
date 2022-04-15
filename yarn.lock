@@ -1256,10 +1256,10 @@
   resolved "https://registry.yarnpkg.com/@types/ms/-/ms-0.7.31.tgz#31b7ca6407128a3d2bbc27fe2d21b345397f6197"
   integrity sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==
 
-"@types/node@*", "@types/node@^17.0.23":
-  version "17.0.23"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.23.tgz#3b41a6e643589ac6442bdbd7a4a3ded62f33f7da"
-  integrity sha512-UxDxWn7dl97rKVeVS61vErvw086aCYhDLyvRQZ5Rk65rZKepaFdm53GeqXaKBuOhED4e9uWq34IC3TdSdJJ2Gw==
+"@types/node@*", "@types/node@^17.0.24":
+  version "17.0.24"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.24.tgz#20ba1bf69c1b4ab405c7a01e950c4f446b05029f"
+  integrity sha512-aveCYRQbgTH9Pssp1voEP7HiuWlD2jW2BO56w+bVrJn04i61yh6mRfoKO6hEYQD9vF+W8Chkwc6j1M36uPkx4g==
 
 "@types/node@^16.11.26":
   version "16.11.26"
@@ -7216,18 +7216,6 @@ pouchdb-adapter-utils@7.0.0:
     pouchdb-merge "7.0.0"
     pouchdb-utils "7.0.0"
 
-pouchdb-adapter-utils@7.2.2:
-  version "7.2.2"
-  resolved "https://registry.yarnpkg.com/pouchdb-adapter-utils/-/pouchdb-adapter-utils-7.2.2.tgz#c64426447d9044ba31517a18500d6d2d28abd47d"
-  integrity sha512-2CzZkTyTyHZkr3ePiWFMTiD5+56lnembMjaTl8ohwegM0+hYhRyJux0biAZafVxgIL4gnCUC4w2xf6WVztzKdg==
-  dependencies:
-    pouchdb-binary-utils "7.2.2"
-    pouchdb-collections "7.2.2"
-    pouchdb-errors "7.2.2"
-    pouchdb-md5 "7.2.2"
-    pouchdb-merge "7.2.2"
-    pouchdb-utils "7.2.2"
-
 pouchdb-adapter-utils@7.3.0:
   version "7.3.0"
   resolved "https://registry.yarnpkg.com/pouchdb-adapter-utils/-/pouchdb-adapter-utils-7.3.0.tgz#1747e4ea0b519a9d817c6eda0e2f0ebc3dc18c41"
@@ -7399,13 +7387,6 @@ pouchdb-json@7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/pouchdb-json/-/pouchdb-json-7.0.0.tgz#d9860f66f27a359ac6e4b24da4f89b6909f37530"
   integrity sha512-w0bNRu/7VmmCrFWMYAm62n30wvJJUT2SokyzeTyj3hRohj4GFwTRg1mSZ+iAmxgRKOFE8nzZstLG/WAB4Ymjew==
-  dependencies:
-    vuvuzela "1.0.3"
-
-pouchdb-json@7.2.2:
-  version "7.2.2"
-  resolved "https://registry.yarnpkg.com/pouchdb-json/-/pouchdb-json-7.2.2.tgz#b939be24b91a7322e9a24b8880a6e21514ec5e1f"
-  integrity sha512-3b2S2ynN+aoB7aCNyDZc/4c0IAdx/ir3nsHB+/RrKE9cM3QkQYbnnE3r/RvOD1Xvr6ji/KOCBie+Pz/6sxoaug==
   dependencies:
     vuvuzela "1.0.3"
 
