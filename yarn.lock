@@ -1304,10 +1304,10 @@
   resolved "https://registry.yarnpkg.com/@types/range-parser/-/range-parser-1.2.3.tgz#7ee330ba7caafb98090bece86a5ee44115904c2c"
   integrity sha512-ewFXqrQHlFsgc09MK5jP5iR7vumV/BYayNC6PgJO2LPe8vrnNFyjQjSppfEngITi0qvfKtzFvgKymGheFM9UOA==
 
-"@types/react-bootstrap-table-next@*", "@types/react-bootstrap-table-next@4.0.17":
-  version "4.0.17"
-  resolved "https://registry.yarnpkg.com/@types/react-bootstrap-table-next/-/react-bootstrap-table-next-4.0.17.tgz#226a94769c89c8eabb3d59e91d7723c004669b05"
-  integrity sha512-cUEdFwljyxqErlt1WU1fT+OILXZrM2JrJgEQb2XNo+7CUJdGAEwVQ5MRDs6jAoh3OX/noPkylfUPDTGIcqvhrQ==
+"@types/react-bootstrap-table-next@*", "@types/react-bootstrap-table-next@4.0.18":
+  version "4.0.18"
+  resolved "https://registry.yarnpkg.com/@types/react-bootstrap-table-next/-/react-bootstrap-table-next-4.0.18.tgz#6b5ad945ef2e0abff0ae966fa1e9ed7b00b5fac0"
+  integrity sha512-dJOj06ReCclTr/gR+gEXqTWyi3U2XTML/dFDZjuMbiC8Ud3Im1kQZT2w910uXAF67OJ63uL4l8Gk2pUd7wJexQ==
   dependencies:
     "@types/react" "*"
 
